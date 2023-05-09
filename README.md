@@ -1,10 +1,12 @@
-# SKI RESORTS
+# YOUR AREA
 
-Ski Resorts website is an online portal with information about ski resorts all over the world. Ski resort locates information about the resort and then presents the information in an easy and comprehensible way. It's a quick and easy way to find the next and best ski adventure!
+Your Area is a home décor B2C e-commerce store. The site is targeted towards users who are interested in luxurious interior products.
+Users can browse and purchase a range of home decor and interior design products. They can also see reviews and comments from previous customers of the website.
 
-**Ski resorts locator made it easier for everyone**
-
-The webiste is targeted towards users that want to see what diffrent ski resorts is out there, compare them and find the resort best suited for their needs. Maybe they just want to check the opening season and hours for a resort or simply want to know if a resort offers accommodation or not. For those that are considering a visit to a resort but want to see what others thought of the resort through their experience, can find user ratings and comments attached to each resort. Users with disabilities or smaller children can find available lifting arrangements for each resort.
+The payment system uses Stripe.  
+**Please note that this website is for educational purposes, <u>do not</u> enter any personal credit/debit card details when using this site**.
+To test this system, test card details can be used. A list of these can be found in Stripe's documentation here.
+The live link can be found here - [Your Area](#)
 
 <img width="800" src="documentation/responsive.png">
 
