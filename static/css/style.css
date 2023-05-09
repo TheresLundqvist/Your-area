@@ -6,7 +6,6 @@
 html,
 body,
 header {
-    height: 160vh;
     font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
 }
@@ -17,10 +16,13 @@ header {
 
 .navbar-brand {
     position: absolute;
-    top: 10%;
+    top: 6%;
     width: 100%;
     position: fixed;
     z-index: 1;
+    background-color: white;
+    padding-top: 2.5em;
+    height: 15vh;
 }
 
 #second-bar {
@@ -82,11 +84,40 @@ header {
 /* Hero image */
 
 .hero-img {
-    background-image: url();
+    position: absolute;
+    top: 30em;
     background-size: cover;
     background-position: center;
+    width: 100vw;
+    opacity: 0.8;
 }
 
+.container-pos {
+    position: relative;
+    max-height: 700px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 34em;
+    left: 3em;
+    height: 10vh;
+    width: 64vw;
+    padding: 10px;
+    background-color: #0000009c;
+    transform: translateY(-50%);
+}
+
+#intro-text {
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+#shop-now {
+    margin-left: 2em;
+}
 
 
 /* Responsive CSS */
@@ -98,7 +129,7 @@ header {
     }
 }
 
-/* On screens that are 320px or less, minimize logo size */
+/* On screens that are 320px or more, give left margin to search bar */
 @media screen and (min-width: 320px) {
     #search {
         margin-left: 1em !important;
@@ -106,13 +137,140 @@ header {
     }    
 }
 
+/* On screens that are 360px or more, re-postion hero img and overlay text */
+@media screen and (min-width: 360px) {
+    .hero-img {
+        top: 27em;
+    }
+
+    .text-overlay {
+        top: 31em;
+        left: 4em;
+    }
+}
+
+/* On screens that are 460px or more, re-postion hero img and overlay text */
+@media screen and (min-width: 460px) {
+    .hero-img {
+        top: 21em;
+    }
+
+    .text-overlay {
+        top: 26em;
+        left: 2em;
+        height: 6vh;
+        width: 79vw;
+    }
+
+    #shop-now {
+        margin-left: 14em;
+    }
+
+    #intro-text {
+        padding-bottom: 4em;
+    }
+}
+
+/* On screens that are 500px or more, re-postion overlay text */
+@media screen and (min-width: 500px) {
+    .text-overlay {
+        width: 71vw;
+    }
+
+    #shop-now {
+        margin-left: 15em;
+    }
+
+    #intro-text {
+        padding-bottom: 5em;
+    }
+}
+
+/* On screens that are 660px or more, re-postion overlay text */
+@media screen and (min-width: 660px) {
+    .text-overlay {
+        width: 55vw;
+        left: 7em;
+    }
+
+    #intro-text {
+        padding-bottom: 8em;
+    }
+}
 
 
-/* On screens that are 420px or less, minimize logo size */
+
+/* On screens that are 770px or more, re-postion overlay text and give search bar more margin */
 @media screen and (min-width: 770px) {
     #search {
         margin-right: 12em !important;
-    }    
+    }
+
+    .hero-img {
+        top: 16em;
+    }
+
+    #shop-now {
+        margin-left: 0;
+    }
+
+    #intro-text {
+        padding-bottom: 6em;
+        font-size: 3em;
+    }
+
+    .text-overlay {
+        top: 24em;
+        width: 69vw;
+        left: 2em;
+        height: 9vh;
+    }
+}
+
+/* On screens that are 920px or more, re-postion overlay text */
+@media screen and (min-width: 920px) {
+    .text-overlay {
+        width: 58vw;
+        left: 11em;
+    }
+
+    #shop-now {
+        margin-left: 13em;
+    }
+
+    #intro-text {
+        padding-bottom: 8em;
+    }
+}
+
+/* On screens that are 992px or more, re-postion overlay text */
+@media screen and (min-width: 992px) {
+    .text-overlay {
+        width: 54vw;
+    }
+
+    #shop-now {
+        margin-left: 16em;
+    }
+
+    #intro-text {
+        padding-bottom: 9em;
+    }
+}
+
+/* On screens that are 1200px or more, re-postion overlay text */
+@media screen and (min-width: 1200px) {
+    .text-overlay {
+        width: 28vw;
+    }
+
+    #shop-now {
+        margin-left: 13em;
+    }
+
+    #intro-text {
+        padding-bottom: 1em;
+    }
 }
 
 
