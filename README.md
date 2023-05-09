@@ -164,7 +164,7 @@ I've used [Miro](https://miro.com/app/dashboard/) to design my sites wireframes.
 <img width="800" src="documentation/header.png">  
 
 **Logo**  
-A customised logo was created using Josefin Sans font in italic style with two arrow icon from Font Awesome. This logo is positioned in the top left of the navigation bar. The logo is linked to the home page for ease of navigation for the user.  
+A customised logo was created by me using Microsoft Word. This logo is positioned in the top left of the navigation bar. The logo is linked to the home page for ease of navigation for the user.  
   
 **Navigation**  
 The navigation bar is present at the top of every page and includes all links to the various other pages. The More navigation link is a drop down menu which includes a view all link and the Contact and About pages. When the user has logged in, the login link changes to display log out instead, giving the user their logged in status.
@@ -300,7 +300,7 @@ The following user stories were scoped out of the project due to time constraint
 - [Google Fonts](https://fonts.google.com/) used to import and alter fonts on the page.
 - [W3C](https://validator.w3.org/#validate_by_input) used for HTML & CSS Validation.
 - [Coolors](https://coolors.co/) used to create colour palette.
-- [Favicon](https://favicon.io/) Used to create the favicon.
+- [Icons 8](https://icons8.com/icons/set/favicon) Used to create the favicon.
 - [Grammerly](https://app.grammarly.com/) used to proof read the README.md.
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to manage Django Forms.
 - [Cloudinary](https://cloudinary.com/) used for uploading the images and hosting them.
