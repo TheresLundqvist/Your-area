@@ -57,13 +57,15 @@
     </nav>
   </header>
   <div class="navbar-brand d-flex justify-content-center">
-    <a href="{% static 'images/your-area-logo.png' %}">Your Area</a>
+    <a href="{% url 'home' %}">
+      <img src="{% static 'images/your-area-logo.png' %}" alt="Your Area home decor online logo" id="logo">
+    </a>
   </div>
   <!-- Second navbar -->
-  <nav class="navbar navbar-expand-md bg-light w-100 justify-content-between" id="main-bar">
+  <nav class="navbar navbar-expand-md bg-light w-100 justify-content-between" id="second-bar">
     <ul class="navbar-nav ms-2">
       <li class="nav-item">
-        <a href="#" class="nav-link">Home</a>
+        <a href="{% url 'home' %}" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link">Register</a>
@@ -72,19 +74,19 @@
         <a href="#" class="nav-link">Login</a>
       </li>
     </ul>
-    <form class="d-flex m-3" role="search">
+    <form class="d-flex" role="search" id="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <button class="btn btn-black" type="submit">Search</button>
     </form>
     <ul class="navbar-nav mx-2">
       <li class="nav-item">
         <a href="#" class="nav-link">
-          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-user icon-black"></i>
         </a>
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link">
-          <i class="fa-solid fa-bag-shopping"></i>
+          <i class="fa-solid fa-bag-shopping icon-black"></i>
         </a>
       </li>
     </ul>

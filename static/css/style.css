@@ -23,21 +23,60 @@ header {
     z-index: 1;
 }
 
-#main-bar {
+#second-bar {
     position: absolute;
     width: 100%;
-    top: 15%;
+    top: 20%;
     position: fixed;
     z-index: 1;
 }
 
-#main-bar .nav-item {
+#second-bar .nav-item {
     margin-left: 10px;
 }
 
 .navbar-nav li a i {
     font-size: 1.5em;
 }
+
+.navbar-dark,
+.bg-dark {
+    background-color: black !important;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+/* Site buttons and icons */
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+
+.btn-black:hover {
+    background-color: #007000;
+    color: white;
+}
+
+.icon-black {
+    color: black;
+}
+
+.icon-black:hover {
+    color: #007000;
+}
+
+
+.nav-item a {
+    color: black;
+}
+
+.nav-item a:hover {
+    color: #007000;
+}
+
 
 
 /* Hero image */
@@ -47,3 +86,33 @@ header {
     background-size: cover;
     background-position: center;
 }
+
+
+
+/* Responsive CSS */
+
+/* On screens that are 420px or less, minimize logo size */
+@media screen and (max-width: 420px) {
+    #logo {
+      width: 90vw;
+    }
+}
+
+/* On screens that are 320px or less, minimize logo size */
+@media screen and (min-width: 320px) {
+    #search {
+        margin-left: 1em !important;
+        margin: 0.7em;
+    }    
+}
+
+
+
+/* On screens that are 420px or less, minimize logo size */
+@media screen and (min-width: 770px) {
+    #search {
+        margin-right: 12em !important;
+    }    
+}
+
+
