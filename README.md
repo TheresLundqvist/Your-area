@@ -470,7 +470,7 @@ Use this space to discuss any differences between the local version you've devel
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 | [Django Docs](https://docs.djangoproject.com/en/4.2/)
 | [Bootstrap Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-| [Code Institute Blog Walkthrough Project](https://github.com/Code-Institute-Solutions/Django3blog)
+| [Code Institute Boutique Ado Walkthrough Project](https://github.com/Code-Institute-Solutions/boutique_ado)
 
 
 ### Media
