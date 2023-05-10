@@ -64,28 +64,32 @@
   </div>
   <!-- Second navbar -->
   <nav class="navbar navbar-expand-md bg-light w-100 justify-content-between" id="second-bar">
-    <ul class="navbar-nav ms-2">
-      <li class="nav-item">
-        <a href="{% url 'home' %}" class="nav-link">Home</a>
-      </li>
-      {% if request.user.is_authenticated %}
-        <li class="nav-item">
-          <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
+    <div class="dropdown">
+      <a class="text-black nav-link dropdown-toggle ms-3" href="#" id="product-category" data-bs-toggle="dropdown" aria-haspopup="true" role="button">
+        Products
+      </a>
+      <ul class="dropdown-menu border-0" aria-labelledby="product-category">
+        <li>
+          <a href="#" class="dropdown-item">Furniture</a></li>
+        <li>
+          <a href="#" class="dropdown-item">Interior Details</a></li>
+        <li>
+          <a href="#" class="dropdown-item">Lightning</a>
         </li>
-      {% else %}
-        <li class="nav-item">
-          <a href="{% url 'account_signup' %}" class="nav-link">Register</a>
+        <li>
+          <a href="#" class="dropdown-item">Textile</a>
         </li>
-        <li class="nav-item">
-          <a href="{% url 'account_login' %}" class="nav-link">Login</a>
-      {% endif %}
+        <li>
+          <a href="#" class="dropdown-item">Kitchen</a>
         </li>
-    </ul>
+      </ul>
+    </div>
     <form method="GET" action="" class="d-flex" role="search" id="search">
-      <input class="form-control me-2" type="search" name="q" placeholder="Search" value="{{ request.GET.q }}" aria-label="Search">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search" value="{{ request.GET.q }}"
+        aria-label="Search">
       <button class="btn btn-black input-group-text" type="submit">Search</button>
     </form>
-    <ul class="list-inline list-unstyled mx-2">
+    <ul class="list-inline list-unstyled ms-3 my-2">
       <li class="list-inline-item dropdown">
         <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
@@ -96,26 +100,26 @@
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="user-options">
           {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-              <a href="" class="dropdown-item">Product Management</a>
-            {% endif %}
-            <a href="" class="dropdown-item">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+          {% if request.user.is_superuser %}
+          <a href="" class="dropdown-item">Product Management</a>
+          {% endif %}
+          <a href="" class="dropdown-item">My Profile</a>
+          <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
           {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+          <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+          <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
           {% endif %}
         </div>
       </li>
-      <li class="list-inline-item ms-4">
+      <li class="list-inline-item me-4 ms-1">
         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
           <div class="text-center">
             <div><i class="fa-solid fa-bag-shopping icon-black"></i></div>
             <p class="my-0">
               {% if grand_total %}
-                ${{ grand_total|floatformat:2 }}
+              ${{ grand_total|floatformat:2 }}
               {% else %}
-                $0.00
+              $0.00
               {% endif %}
             </p>
           </div>
