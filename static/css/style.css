@@ -99,6 +99,13 @@ body {
     color: #007000;
 }
 
+.icon-white {
+    color: white;
+}
+
+.icon-white:hover {
+    color: #007000;
+}
 
 .nav-item a {
     color: black;
@@ -118,20 +125,27 @@ body {
     color: white;
 }
 
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+.btn-white:hover {
+    background-color: #007000;
+    color: white;
+}
+
+
 .bg-white {
     background-color: white;
 }
 
+.icon-resize {
+    font-size: 0.8em;
+}
+
 
 /* Media Queries */
-
-/* On screens that are 320px or more, give left margin to search bar */
-@media screen and (min-width: 320px) {
-    #search {
-        margin-left: 1em !important;
-        margin: 0.7em;
-    }    
-}
 
 /* On screens that are 600px or more, re-postion second navbar, logo and html */
 @media screen and (min-width: 600px) {
