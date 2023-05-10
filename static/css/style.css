@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
 
 
 /* Navbar */
@@ -6,10 +6,14 @@
 html,
 body,
 header {
-    height: 20vh;
+    height: 100%;
     font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
 }
+
+#logo {
+    width: 50vw;
+  }
 
 .fixed-top .navbar-nav li a {
     color: white !important;
@@ -23,7 +27,7 @@ header {
     z-index: 1;
     background-color: white;
     padding-top: 2.5em;
-    height: 15vh;
+    height: 20vh;
 }
 
 #second-bar {
@@ -51,7 +55,25 @@ header {
     background-color: white !important;
 }
 
-/* Site buttons and icons */
+body {
+    background: url('/media/interior-design-hero-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Josefin Sans';
+}
+
+/* Site buttons and icons, colors */
+
+.heading-font {
+    font-family: 'Abril Fatface', sans-serif;
+    font-style: italic;
+}
+
+.shop-now-button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.6em;
+}
 
 .btn-black {
     background-color: black;
@@ -80,56 +102,17 @@ header {
     color: #007000;
 }
 
-
-
-/* Hero image */
-
-.hero-img {
-    position: absolute;
-    top: 30em;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    opacity: 0.8;
-}
-
-.container-pos {
-    position: relative;
-    max-height: 700px;
-}
-
-.text-overlay {
-    position: absolute;
-    top: 34em;
-    left: 3em;
-    height: 10vh;
-    width: 58vw;
-    padding: 10px;
-    background-color: #0000009c;
-    transform: translateY(-50%);
-}
-
-#intro-text {
+.btn-green {
+    background-color: #007000;
     color: white;
-    font-size: 2em;
-    font-style: italic;
 }
 
-#shop-now {
-    position: relative;
-    top: 3em;
-    margin-left: 3em;
+.btn-green:hover {
+    background-color: black;
+    color: white;
 }
 
-
-/* Responsive CSS */
-
-/* On screens that are 420px or less, minimize logo size */
-@media screen and (max-width: 420px) {
-    #logo {
-      width: 90vw;
-    }
-}
+/* Media Queries */
 
 /* On screens that are 320px or more, give left margin to search bar */
 @media screen and (min-width: 320px) {
@@ -139,173 +122,44 @@ header {
     }    
 }
 
-/* On screens that are 360px or more, re-postion hero img and overlay text */
-@media screen and (min-width: 360px) {
-    .hero-img {
-        top: 17em;
+/* On screens that are 600px or more, re-postion second navbar, logo and html */
+@media screen and (min-width: 600px) {
+    #second-bar {
+        top: 23%;
     }
 
-    .text-overlay {
-        top: 22em;
-        left: 4em;
-    }
-}
-
-/* On screens that are 460px or more, re-postion hero img and overlay text */
-@media screen and (min-width: 460px) {
-    .hero-img {
-        top: 13em;
+    #logo {
+        width: 40vw;
     }
 
-    .text-overlay {
-        top: 17em;
-        left: 2em;
-        height: 6vh;
-        width: 79vw;
-    }
-
-    #shop-now {
-        top: 10em;
-        margin-left: 7em;
+    html,
+    body,
+    header {
+    height: 80%;
     }
 }
 
-/* On screens that are 500px or more, re-postion overlay text */
-@media screen and (min-width: 500px) {
-    .text-overlay {
-        width: 72vw;
-    }
-
-    #shop-now {
-        top: 12em;
-    }
-}
-
-/* On screens that are 660px or more, re-postion overlay text */
-@media screen and (min-width: 660px) {
-    .hero-img {
-        top: 9em;
-    }
-
-    .text-overlay {
-        top: 14em;
-        left: 9em;
-        width: 23em;
-    }
-
-    #shop-now {
-        margin-left: 8em;
-        top: 17em;
-    }
-}
-
-
-
-/* On screens that are 770px or more, re-postion overlay text and give search bar more margin */
+/* On screens that are 770px or more, give search bar more margin */
 @media screen and (min-width: 770px) {
     #search {
         margin-right: 12em !important;
     }
-
-    .hero-img {
-        top: 8em;
-    }
-
-    #shop-now {
-        margin-left: 14em;
-        top: 20em;
-    }
-
-    #intro-text {
-        font-size: 3em;
-    }
-
-    .text-overlay {
-        top: 14em;
-        width: 69vw;
-        left: 6em;
-        height: 9vh;
-    }
 }
 
-/* On screens that are 920px or more, re-postion overlay text */
+/* On screens that are 920px or more, minimize logo size */
 @media screen and (min-width: 920px) {
-    .hero-img {
-        top: 5em;
-    }
-
-    .text-overlay {
-        width: 58vw;
-        left: 11em;
-    }
-
-    #shop-now {
-        margin-left: 13em;
-        top: 23em;
+    #logo {
+    width: 30vw;
     }
 }
 
-/* On screens that are 992px or more, re-postion overlay text */
-@media screen and (min-width: 992px) {
-    .text-overlay {
-        left: 13em;
-        width: 54vw;
-    }
-
-    #shop-now {
-        margin-left: 13em;
-        top: 27em;
-    }
-}
-
-/* On screens that are 1200px or more, re-postion overlay text */
+/* On screens that are 1200px or more, re-postion navbar-brand and second navbar */
 @media screen and (min-width: 1200px) {
-    .hero-img {
-        top: -13em;
-    }
-
-    .text-overlay {
-        top: 10em;
-        left: 20em;
-        width: 43vw;
-        height: 13vh;
-    }
-
-    #shop-now {
-        top: 1em;
-        margin-left: 21em;
-        font-size: 1.2em;
-    }
-
     .navbar-brand {
-        height: 19vh;
+        height: 20vh;
     }
 
     #second-bar {
         top: 25%;
     }
-
 }
-
-/* On screens that are 1700px or more, re-postion overlay text */
-@media screen and (min-width: 1700px) {
-    .hero-img {
-        top: -20em;
-    }
-
-    .text-overlay {
-        top: 16em;
-        left: 40em;
-        width: 28vw;
-        height: 9vh;
-    }
-
-    #shop-now {
-        margin-left: 12em;
-        font-size: 1.7em;
-    }
-}
-
-
-
-
