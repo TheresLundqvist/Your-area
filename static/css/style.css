@@ -6,6 +6,7 @@
 html,
 body,
 header {
+    height: 20vh;
     font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
 }
@@ -102,7 +103,7 @@ header {
     top: 34em;
     left: 3em;
     height: 10vh;
-    width: 64vw;
+    width: 58vw;
     padding: 10px;
     background-color: #0000009c;
     transform: translateY(-50%);
@@ -112,11 +113,12 @@ header {
     color: white;
     font-size: 2em;
     font-style: italic;
-    padding-bottom: 10px;
 }
 
 #shop-now {
-    margin-left: 2em;
+    position: relative;
+    top: 3em;
+    margin-left: 3em;
 }
 
 
@@ -140,11 +142,11 @@ header {
 /* On screens that are 360px or more, re-postion hero img and overlay text */
 @media screen and (min-width: 360px) {
     .hero-img {
-        top: 27em;
+        top: 17em;
     }
 
     .text-overlay {
-        top: 31em;
+        top: 22em;
         left: 4em;
     }
 }
@@ -152,49 +154,48 @@ header {
 /* On screens that are 460px or more, re-postion hero img and overlay text */
 @media screen and (min-width: 460px) {
     .hero-img {
-        top: 21em;
+        top: 13em;
     }
 
     .text-overlay {
-        top: 26em;
+        top: 17em;
         left: 2em;
         height: 6vh;
         width: 79vw;
     }
 
     #shop-now {
-        margin-left: 14em;
-    }
-
-    #intro-text {
-        padding-bottom: 4em;
+        top: 10em;
+        margin-left: 7em;
     }
 }
 
 /* On screens that are 500px or more, re-postion overlay text */
 @media screen and (min-width: 500px) {
     .text-overlay {
-        width: 71vw;
+        width: 72vw;
     }
 
     #shop-now {
-        margin-left: 15em;
-    }
-
-    #intro-text {
-        padding-bottom: 5em;
+        top: 12em;
     }
 }
 
 /* On screens that are 660px or more, re-postion overlay text */
 @media screen and (min-width: 660px) {
-    .text-overlay {
-        width: 55vw;
-        left: 7em;
+    .hero-img {
+        top: 9em;
     }
 
-    #intro-text {
-        padding-bottom: 8em;
+    .text-overlay {
+        top: 14em;
+        left: 9em;
+        width: 23em;
+    }
+
+    #shop-now {
+        margin-left: 8em;
+        top: 17em;
     }
 }
 
@@ -207,28 +208,32 @@ header {
     }
 
     .hero-img {
-        top: 16em;
+        top: 8em;
     }
 
     #shop-now {
-        margin-left: 0;
+        margin-left: 14em;
+        top: 20em;
     }
 
     #intro-text {
-        padding-bottom: 6em;
         font-size: 3em;
     }
 
     .text-overlay {
-        top: 24em;
+        top: 14em;
         width: 69vw;
-        left: 2em;
+        left: 6em;
         height: 9vh;
     }
 }
 
 /* On screens that are 920px or more, re-postion overlay text */
 @media screen and (min-width: 920px) {
+    .hero-img {
+        top: 5em;
+    }
+
     .text-overlay {
         width: 58vw;
         left: 11em;
@@ -236,41 +241,71 @@ header {
 
     #shop-now {
         margin-left: 13em;
-    }
-
-    #intro-text {
-        padding-bottom: 8em;
+        top: 23em;
     }
 }
 
 /* On screens that are 992px or more, re-postion overlay text */
 @media screen and (min-width: 992px) {
     .text-overlay {
+        left: 13em;
         width: 54vw;
     }
 
     #shop-now {
-        margin-left: 16em;
-    }
-
-    #intro-text {
-        padding-bottom: 9em;
+        margin-left: 13em;
+        top: 27em;
     }
 }
 
 /* On screens that are 1200px or more, re-postion overlay text */
 @media screen and (min-width: 1200px) {
+    .hero-img {
+        top: -13em;
+    }
+
     .text-overlay {
-        width: 28vw;
+        top: 10em;
+        left: 20em;
+        width: 43vw;
+        height: 13vh;
     }
 
     #shop-now {
-        margin-left: 13em;
+        top: 1em;
+        margin-left: 21em;
+        font-size: 1.2em;
     }
 
-    #intro-text {
-        padding-bottom: 1em;
+    .navbar-brand {
+        height: 19vh;
+    }
+
+    #second-bar {
+        top: 25%;
+    }
+
+}
+
+/* On screens that are 1700px or more, re-postion overlay text */
+@media screen and (min-width: 1700px) {
+    .hero-img {
+        top: -20em;
+    }
+
+    .text-overlay {
+        top: 16em;
+        left: 40em;
+        width: 28vw;
+        height: 9vh;
+    }
+
+    #shop-now {
+        margin-left: 12em;
+        font-size: 1.7em;
     }
 }
+
+
 
 
