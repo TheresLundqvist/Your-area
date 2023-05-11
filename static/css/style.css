@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+}
 
-/* Navbar */
+
+html {
+    height: 100%;
+}
+
 body {
     background: url('/media/interior-design-hero-img.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -15,6 +23,41 @@ body {
     border: 2px solid black;
 }
 
+
+/* Buttons and Icons */
+
 .btn-white {
     background-color: white;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-white:hover,
+.shop-now-button:hover {
+    background-color: #007000;
+    color: white;
+}
+
+/* Colors */
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.main-text {
+    background-color: rgba(0, 0, 0, 0.144);
+    font-style: italic;
+    font-weight: 500;
 }
