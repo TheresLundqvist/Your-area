@@ -5,11 +5,6 @@
     margin: 0;
 }
 
-
-html {
-    height: 100%;
-}
-
 body {
     background: url('/media/interior-design-hero-img.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -42,6 +37,10 @@ body {
     color: white;
 }
 
+.banner-font {
+    font-weight: 400;
+}
+
 /* Colors */
 
 .text-black {
@@ -60,4 +59,13 @@ body {
     background-color: rgba(0, 0, 0, 0.144);
     font-style: italic;
     font-weight: 500;
+}
+
+/* Media Queries */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .banner-font {
+        font-size: 0.9em; 
+    }
 }
