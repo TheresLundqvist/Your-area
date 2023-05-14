@@ -1,7 +1,7 @@
 {% load static %}
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -103,8 +103,10 @@
       </nav>
     </div>
     <div id="delivery-banner" class="row text-center">
-      <div class="col bg-black text-white">
-        <h4 class="logo-font my-1">Free delivery on orders over ${{ free_shipping_threshold }}!</h4>
+      <div class="col bg-black text-white d-inline-flex justify-content-center">
+        <p class="banner-font my-1 me-md-5 d-none d-md-inline"><span class="me-2">-</span>Fast deliveries<span class="ms-2">-</span></p>
+        <p class="banner-font my-1 mx-md-5"><span class="me-2">-</span>Free delivery on orders over ${{ free_shipping_threshold }}<span class="ms-2">-</span></p>
+        <p class="banner-font my-1 ms-md-5 d-none d-md-inline"><span class="me-2">-</span>30 days open purchase<span class="ms-2">-</span></p>
       </div>
     </div>
   </header>
