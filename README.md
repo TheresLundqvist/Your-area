@@ -304,7 +304,6 @@ The following user stories were scoped out of the project due to time constraint
 - [Grammerly](https://app.grammarly.com/) used to proof read the README.md.
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to manage Django Forms.
 - [Cloudinary](https://cloudinary.com/) used for uploading the images and hosting them.
-- [Bootstrap](https://getbootstrap.com/) CSS Framework for developing responsiveness and styling.
 - [SmartDraw](https://www.smartdraw.com/) used to create the database schema design.
 
 
@@ -464,8 +463,7 @@ Use this space to discuss any differences between the local version you've devel
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [YouTube - Double navbars ](https://www.youtube.com/watch?v=k81x4ncKzjI) | Double bootstrap navbars |
-| [Youtube - Hero image](https://www.youtube.com/watch?v=pEwA4-Mmnj8) | Bootstrap 5 Hero image |
+| [W3Schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) | Media Queries | Common breaking points for media queries |
 | [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 | [Django Docs](https://docs.djangoproject.com/en/4.2/)
