@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@1,900&display=swap');
 
 * {
     padding: 0;
@@ -25,16 +25,39 @@ body {
     background-color: white;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
+.container {
+    position: relative;
+    top: 35%;
 }
 
-.btn-white:hover,
-.shop-now-button:hover {
-    background-color: #007000;
+.overlay-bg {
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 90%;
+    height: auto;
+}
+
+.overlay-text {
+    font-size: 2.3em;
     color: white;
+    font-style: italic;
+    font-family: Playfair Display, sans-serif;
+}
+
+.btn-shop {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.btn-shop:hover {
+    background-color: #007000;
+    color: white; 
+}
+
+.btn-white:hover {
+    background-color: white;
+    color: black;
 }
 
 .banner-font {
@@ -67,5 +90,20 @@ body {
 @media only screen and (min-width: 768px) {
     .banner-font {
         font-size: 0.9em; 
+    }
+
+    .text-container {
+        top: 70%;
+    }
+
+    .overlay-bg {
+        width: 70%;
+    }
+}
+
+/* Medium devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .overlay-bg {
+        width: 35%;
     }
 }
