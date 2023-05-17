@@ -18,12 +18,12 @@ body {
     border: 2px solid black;
 }
 
-
-/* Buttons and Icons */
-
-.btn-white {
-    background-color: white;
+.banner-font {
+    font-weight: 400;
 }
+
+
+/* Index page - main image overlay text */
 
 .container {
     position: relative;
@@ -43,14 +43,21 @@ body {
     font-family: Playfair Display, sans-serif;
 }
 
-.btn-shop {
+
+/* Buttons and Icons */
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-btn {
     background-color: black;
     color: white;
     text-transform: uppercase;
     font-weight: bolder;
 }
 
-.btn-shop:hover {
+.btn-btn:hover {
     background-color: #007000;
     color: white; 
 }
@@ -60,12 +67,7 @@ body {
     color: black;
 }
 
-.banner-font {
-    font-weight: 400;
-}
-
-.user-icon:hover,
-.cart-icon:hover {
+.icon:hover {
     color: #007000;
 }
 
@@ -84,11 +86,6 @@ body {
     background: #000 !important;
 }
 
-.main-text {
-    background-color: rgba(0, 0, 0, 0.144);
-    font-style: italic;
-    font-weight: 500;
-}
 
 /* Media Queries */
 
