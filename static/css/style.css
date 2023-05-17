@@ -64,6 +64,12 @@ body {
     font-weight: 400;
 }
 
+.user-icon:hover,
+.cart-icon:hover {
+    color: #007000;
+}
+
+
 /* Colors */
 
 .text-black {
