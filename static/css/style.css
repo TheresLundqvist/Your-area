@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@1,900&display=swap');
 
 html {
-    height: 100vh;
+    height: 100%;
 }
 
 * {
@@ -24,6 +24,18 @@ body {
 
 .banner-font {
     font-weight: 400;
+}
+
+/* Products page */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 
@@ -112,5 +124,9 @@ body {
 @media only screen and (min-width: 992px) {
     .overlay-bg {
         width: 35%;
+    }
+
+    .header-container {
+        padding-top: 290px;
     }
 }
