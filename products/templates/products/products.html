@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}Your Area | Products{% endblock %}
+
+<!-- {% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %} -->
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            {% if current_categories %}
+            {% for c in current_categories %}
+            <h1 class="text-center pt-4">{{ c.friendly_name }}</h1>
+            {% endfor %}
+            {% else %}
+            <h1 class="text-center pt-4">All Home Décor</h1>
+            {% endif %}
+        </div>
+        {% if user.is_superuser %}
+        <div class="col-12">
+            <div class="pt-3 text-center">
+                <a href="{% url 'add_product' %}" class="btn btn-sm gold-button py-2" aria-label="add-new-product">
+                    Add New Product
+                </a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <br>
+    <div class="row mb-2">
+        <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+           <!-- For sorting.. -->
+        </div>
+        <div class="col-12 col-md-6 order-md-first">
+            <!--- How many products -->
+        </div>
+    </div>
+    <!--- All products on site -->
+    <div class="row card-deck">
+        {% for product in products  %}
+        <div class="col-sm-6 col-md-4 px-1 d-flex align-items-stretch">
+            <div class="card card-detail product-card border-0 mb-3 mx-auto mx-sm-2">
+                {% if product.image %}
+                <img src="#" class="card-img-top" alt="{{ product.name }}">
+                {% else %}
+                <img src="#" alt="{{ product.name }}" class="card-img-top">
+                {% endif %}
+                <div class="row card-body py-2">
+                    <div class="col pl-0 card-text">
+                        <strong>{{ product.name }}</strong>
+                    </div>
+                    <div class="col text-right pr-0">€{{ product.price }}</div>
+                    <a href="#" class="stretched-link"
+                        aria-label="product-detail"></a>
+                </div>
+                <div class="row card-body py-0 mb-4">
+                    <small class="col pl-0 card-text">
+                        {{ product.excerpt }}
+                    </small>
+                    {% if request.user.is_superuser %}
+                    <small class="col text-right pr-0 edit-delete-btns">
+                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                        <a href="{% url 'delete_product' product.id %}">Delete</a>
+                    </small>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="btt-button shadow-sm rounded-0 border-gold">
+    <div class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-up text-jet mx-auto my-auto"></i>
+    </div>
+</div>
+{% endblock %}
+
