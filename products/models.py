@@ -3,7 +3,6 @@ from django.db import models
 
 class Product(models.Model):
     """Model for Product"""
-    sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
     estimated_dispatch = models.CharField(max_length=254, null=True, blank=True)  # noqa
