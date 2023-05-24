@@ -5,6 +5,7 @@ class Category(models.Model):
     """Model for Category"""
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    cat_image = models.ImageField(null=True, blank=True)
 
     class Meta:
         """Set verbose name"""
