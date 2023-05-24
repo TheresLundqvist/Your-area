@@ -38,6 +38,14 @@ body {
     left: 0;
 }
 
+.header-container {
+    padding-top: 100px;
+}
+
+.product-header {
+    color: black;
+}
+
 
 /* Index page - main image overlay text */
 
@@ -118,15 +126,15 @@ body {
     .overlay-bg {
         width: 70%;
     }
+
+    .header-container {
+        padding-top: 240px;
+    }
 }
 
 /* Medium devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .overlay-bg {
         width: 35%;
-    }
-
-    .header-container {
-        padding-top: 290px;
     }
 }
