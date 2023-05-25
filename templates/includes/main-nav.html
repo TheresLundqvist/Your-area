@@ -19,10 +19,10 @@
                 Shop Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="shop-link">
-                <a href="" class="dropdown-item">Furniture</a>
-                <a href="" class="dropdown-item">Interior Details</a>
-                <a href="" class="dropdown-item">Lightning</a>
-                <a href="" class="dropdown-item">Textile</a>
+                <a href="{% url 'products' %}?category=furniture" class="dropdown-item">Furniture</a>
+                <a href="{% url 'products' %}?category=interior_details" class="dropdown-item">Interior Details</a>
+                <a href="{% url 'products' %}?category=lightning" class="dropdown-item">Lightning</a>
+                <a href="{% url 'products' %}?category=textile" class="dropdown-item">Textile</a>
             </div>
         </li>
         <li class="nav-item dropdown">
