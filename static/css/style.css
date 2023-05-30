@@ -46,6 +46,11 @@ body {
     color: black;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
 
 /* Index page - main image overlay text */
 
@@ -128,7 +133,7 @@ body {
     }
 
     .header-container {
-        padding-top: 240px;
+        padding-top: 250px;
     }
 }
 
