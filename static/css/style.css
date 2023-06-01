@@ -54,7 +54,7 @@ a.category-badge > span.badge:hover {
 
 /* Index page - main image overlay text */
 
-.container {
+.text-container {
     position: relative;
     top: 35%;
 }
