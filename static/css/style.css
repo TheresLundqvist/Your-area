@@ -51,6 +51,13 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+/* Shopping bag page */
+
+.bag-container {
+    position: relative;
+    top: 20%;
+}
+
 
 /* Index page - main image overlay text */
 
@@ -146,6 +153,10 @@ a.category-badge > span.badge:hover {
 
     .text-container {
         top: 70%;
+    }
+
+    .bag-container {
+        top: 50%;
     }
 
     .overlay-bg {
