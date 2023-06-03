@@ -94,7 +94,7 @@ a.category-badge > span.badge:hover {
 }
 
 .btn-btn:hover {
-    background-color: #007000;
+    background-color: #555;
     color: white; 
 }
 
@@ -104,7 +104,7 @@ a.category-badge > span.badge:hover {
 }
 
 .icon:hover {
-    color: #007000;
+    color: #555;
 }
 
 .btt-button {
