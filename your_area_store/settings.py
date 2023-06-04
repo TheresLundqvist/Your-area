@@ -59,6 +59,7 @@ INSTALLED_APPS = [
 
     # Other
     'crispy_forms',
+    'stripe',
 ]
 
 SITE_ID = 1
@@ -209,5 +210,9 @@ if 'USE_AWS' in os.environ:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Stripe
 FREE_DELIVERY_THRESHOLD = 500
 STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'sek'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
