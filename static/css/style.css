@@ -172,6 +172,10 @@ a.category-badge > span.badge:hover {
         width: 32px;
         margin-right: 20px;
     }
+
+    .bag-img {
+        width: 15% !important;
+    }
 }
 
 /* Medium devices (laptops/desktops, 992px and up) */
