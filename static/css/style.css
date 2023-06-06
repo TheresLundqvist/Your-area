@@ -121,6 +121,10 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
 
 /* ------------------------------- Colors */
 
@@ -165,6 +169,18 @@ a.category-badge > span.badge:hover {
     height: 125px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* ------------------------------- Allauth form formatting */
+
+/* Allauth form formatting */
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
 }
 
 /* ------------------------------- Media Queries */
