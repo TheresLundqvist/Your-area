@@ -82,31 +82,6 @@ a.category-badge > span.badge:hover {
 
 /* ------------------------------- Buttons and Icons */
 
-.btn-white {
-    background-color: white;
-}
-
-.btn-btn {
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-.btn-btn:hover {
-    background-color: #555;
-    color: white; 
-}
-
-.btn-white:hover {
-    background-color: white;
-    color: black;
-}
-
-.icon:hover {
-    color: #555;
-}
-
 .btt-button {
     height: 25px;
     width: 25px;
@@ -128,17 +103,6 @@ input[name='q']::placeholder {
 
 /* ------------------------------- Colors */
 
-.text-black {
-    color: #000 !important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-.bg-black {
-    background: #000 !important;
-}
 
 .bg-grey {
     background: #555;
