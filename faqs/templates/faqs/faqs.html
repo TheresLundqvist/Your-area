@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <h3 class="heading">Our most frequently asked questions right now</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="accordion" id="faqsaccordion">
+                {% for faq in faqs %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-{{forloop.counter}}" aria-expanded="false" aria-controls="collapse-{{forloop.counter}}">
+                            {{ faq.question }}
+                        </button>
+                    </h2>
+                    <div id="collapse-{{forloop.counter}}" class="accordion-collapse collapse" data-bs-parent="#faqsaccordion">
+                        <div class="accordion-body">
+                            {{ faq.answer }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
