@@ -13,8 +13,8 @@
 <div class="container mt-3">
     <div class="row">
         <div class="col-md-4 mx-auto">
-            <h3 class="heading">Contact us </h3>
-            <form action="{% url 'contact' %}" method="post"> {% csrf_token %}
+            <h3 class="heading">Sign up to newsletter here</h3>
+            <form action="{% url 'newsletter' %}" method="post"> {% csrf_token %}
                 {{ form|crispy }}
                 <div class="d-grid gap-2 mt-4 mb-4">
                     <button class="btn btn-org" type="submit">Submit</button>
