@@ -35,7 +35,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = ['your-area.herokuapp.com', 'localhost', '8000-thereslundqvis-yourarea-mnhl076mesq.ws-eu98.gitpod.io']  # noqa
+ALLOWED_HOSTS = ['your-area.herokuapp.com', 'localhost', '8000-thereslundqvis-yourarea-mnhl076mesq.ws-eu99.gitpod.io']  # noqa
 
 
 # Application definition
@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'contact',
 
     # Other
     'crispy_forms',
