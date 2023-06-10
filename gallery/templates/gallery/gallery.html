@@ -1,0 +1,31 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+<div class="overlay"></div>
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12">
+            <div id="photos" class="m-3">
+                <img src="{% static 'images/inspo-home-decor-item.webp' %}" alt="">
+                <img src="{% static 'images/inspo-home-decor.webp' %}" alt="">
+                <img src="{% static 'images/inspo-home-design.webp' %}" alt="">
+                <img src="{% static 'images/inspo-interior-decorations.jpeg' %}" alt="">
+                <img src="{% static 'images/inspo-interior-design.webp' %}" alt="">
+                <img src="{% static 'images/inspo-kitchen-interior.webp' %}" alt="">
+                <img src="{% static 'images/inspo-livingroom-interior.webp' %}" alt="">
+                <img src="{% static 'images/interior-design-hero-img.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
