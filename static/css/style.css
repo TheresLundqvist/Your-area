@@ -47,7 +47,7 @@ body {
     color: black;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -57,6 +57,10 @@ a.category-badge > span.badge:hover {
 .bag-container {
     position: relative;
     top: 20%;
+}
+
+.summery {
+    font-size: .9rem;
 }
 
 
@@ -83,8 +87,15 @@ a.category-badge > span.badge:hover {
 
 /* ------------------------------- Buttons and Icons */
 
+.keep-shop,
+.secure-checkout,
+.fa-chevron-left,
+.fa-lock {
+    font-size: .6rem;
+}
+
+
 .qty_input {
-    max-width: 120px;
     padding: 0;
 }
 
@@ -115,7 +126,7 @@ input[name='q']::placeholder {
     column-gap: 0;
 }
 
-#photos > img {
+#photos>img {
     width: 100%;
 }
 
@@ -201,6 +212,17 @@ input[name='q']::placeholder {
     #photos {
         column-count: 2;
     }
+
+    .keep-shop,
+    .secure-checkout,
+    .fa-chevron-left,
+    .fa-lock {
+        font-size: 1rem;
+    }
+
+    .summery {
+        font-size: 1rem;
+    }
 }
 
 
@@ -281,7 +303,8 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 }
