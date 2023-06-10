@@ -23,6 +23,7 @@ body {
 }
 
 .banner-font {
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
@@ -39,7 +40,7 @@ body {
 }
 
 .header-container {
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .product-header {
@@ -81,6 +82,10 @@ a.category-badge > span.badge:hover {
 
 
 /* ------------------------------- Buttons and Icons */
+
+.qty_input {
+    max-width: 120px;
+}
 
 .btt-button {
     height: 25px;
@@ -179,8 +184,9 @@ input[name='q']::placeholder {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
     .banner-font {
-        font-size: 0.9em; 
+        margin-left: 0 !important;
     }
 
     .text-container {
@@ -196,7 +202,7 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 250px;
+        padding-top: 220px;
     }
 
     .btt-button {
@@ -208,11 +214,48 @@ input[name='q']::placeholder {
     .bag-img {
         width: 15% !important;
     }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
 }
 
 /* Medium devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .overlay-bg {
         width: 35%;
+    }
+
+    .header-container {
+        padding-top: 250px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .nav-link-text {
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    .form-control {
+        padding: 0;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
