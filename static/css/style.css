@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: url('../images/interior-design-hero-img.jpg') no-repeat center center fixed;
+    background: url('../images/interior-design-hero-img.jpg') no-repeat center center;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -193,6 +193,66 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* ------------------------------- Footer */
+
+footer {
+    position: relative;
+    top: 50vh;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+    color: white;
+}
+
+.divider {
+    border-left: 1px solid rgba(245, 246, 245, 0.2);
+    border-right: 1px solid rgba(245, 246, 245, 0.2);
+}
+
+.member-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.member-logo-postnord {
+    width: 180px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+.member-logo:hover,
+.member-logo-postnord:hover {
+    opacity: 80%;
+}
+
+.social-networks i {
+    font-size: 160%;
+    padding-right: 20px;
+}
+
+.social-networks i:hover {
+    opacity: 80%;
+}
+
+.footer-link {
+    color: white;
+}
+
+/* ------------------------------- About section */
+
+section {
+    position: relative;
+    top: 50vh;
+}
+
+
 /* ------------------------------- Allauth form formatting */
 
 /* Allauth form formatting */
@@ -223,6 +283,15 @@ input[name='q']::placeholder {
     .summery {
         font-size: 1rem;
     }
+
+    section {
+        top: 70vh;
+    }
+
+    footer {
+        top: 70vh;
+    }
+
 }
 
 
@@ -266,6 +335,14 @@ input[name='q']::placeholder {
 
     #photos {
         column-count: 3;
+    }
+
+    section {
+        top: 72vh;
+    }
+
+    footer {
+        top: 70vh;
     }
 }
 

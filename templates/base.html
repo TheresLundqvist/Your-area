@@ -43,91 +43,93 @@
 
 <body>
   <header class="container-fluid fixed-top">
-    <div id="topnav" class="row bg-dark pt-md-2 d-none d-md-flex">
-      <div class="col-12 col-md-4">
-        <form method="GET" action="{% url 'products' %}" role="search">
-          <div class="input-group w-100">
-            <input class="form-control me-2" type="text" name="q"
-              placeholder="Search our site">
-            <div class="input-group-append">
-              <button class="form-control btn btn-light" type="submit">
-                <span class="icon">
-                  <i class="fas fa-search"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-12 col-md-4 ms-auto">
-        <ul class="list-inline list-unstyled text-center text-md-right my-0">
-          <li class="list-inline-item dropdown">
-            <a class="nav-link text-white" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              <div class="text-center">
-                <div><i class="fas fa-user fa-lg icon"></i></div>
-                <p class="my-0">My Account</p>
+    <nav>
+      <div id="topnav" class="row bg-dark pt-md-2 d-none d-md-flex">
+        <div class="col-12 col-md-4">
+          <form method="GET" action="{% url 'products' %}" role="search">
+            <div class="input-group w-100">
+              <input class="form-control me-2" type="text" name="q" placeholder="Search our site">
+              <div class="input-group-append">
+                <button class="form-control btn btn-light" type="submit">
+                  <span class="icon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </button>
               </div>
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-              {% if request.user.is_authenticated %}
-              {% if request.user.is_superuser %}
-              <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-              {% endif %}
-              <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-              {% else %}
-              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-              {% endif %}
             </div>
-          </li>
-          <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link"
-              href="{% url 'view_bag' %}">
-              <div class="text-center ms-md-3">
-                <div><i class="fas fa-shopping-bag fa-lg icon"></i></div>
-                <p class="my-0">
-                  {% if grand_total %}
-                  SEK {{ grand_total|floatformat:2 }}
-                  {% else %}
-                  SEK 0.00
-                  {% endif %}
-                </p>
+          </form>
+        </div>
+        <div class="col-12 col-md-4 ms-auto">
+          <ul class="list-inline list-unstyled text-center text-md-right my-0">
+            <li class="list-inline-item dropdown">
+              <a class="nav-link text-white" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <div class="text-center">
+                  <div><i class="fas fa-user fa-lg icon"></i></div>
+                  <p class="my-0">My Account</p>
+                </div>
+              </a>
+              <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                {% endif %}
+                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
               </div>
-            </a>
-          </li>
-        </ul>
+            </li>
+            <li class="list-inline-item">
+              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link"
+                href="{% url 'view_bag' %}">
+                <div class="text-center ms-md-3">
+                  <div><i class="fas fa-shopping-bag fa-lg icon"></i></div>
+                  <p class="my-0">
+                    {% if grand_total %}
+                    SEK {{ grand_total|floatformat:2 }}
+                    {% else %}
+                    SEK 0.00
+                    {% endif %}
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="row text-center bg-white pt-3 d-none d-md-block">
-      <a href="{% url 'home' %}" class="nav-link main-logo-link">
-        <img src="{% static 'images/your-area-logo.png' %}" alt="Home interior logo" id="logo" class="p-2">
-      </a>
-    </div>
-    <div class="row bg-white">
-      <nav class="navbar navbar-expand-md navbar-light w-100">
-        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-          aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="list-inline list-unstyled text-center text-md-right my-0">
-          {% include 'includes/mobile-top-header.html' %}
-        </ul>
-        {% include 'includes/main-nav.html' %}
-      </nav>
-    </div>
-    <div id="delivery-banner" class="row text-center">
-      <div class="col bg-dark text-white d-inline-flex justify-content-center">
-        <p class="banner-font my-1 me-md-5 d-none d-md-inline"><span class="me-2">-</span>Fast deliveries<span
-            class="ms-2">-</span></p>
-        <p class="banner-font my-1 mx-md-5"><span class="me-2">-</span>Free delivery on orders over
-          SEK {{ free_delivery_threshold }}<span class="ms-2">-</span></p>
-        <p class="banner-font my-1 ms-md-5 d-none d-md-inline"><span class="me-2">-</span>30 days open purchase<span
-            class="ms-2">-</span></p>
+      <div class="row text-center bg-white pt-3 d-none d-md-block">
+        <a href="{% url 'home' %}" class="nav-link main-logo-link">
+          <img src="{% static 'images/your-area-logo.png' %}" alt="Home interior logo" id="logo" class="p-2">
+        </a>
       </div>
-    </div>
+      <div class="row bg-white">
+        <nav class="navbar navbar-expand-md navbar-light w-100">
+          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="list-inline list-unstyled text-center text-md-right my-0">
+            {% include 'includes/mobile-top-header.html' %}
+          </ul>
+          {% include 'includes/main-nav.html' %}
+        </nav>
+      </div>
+      <div id="delivery-banner" class="row text-center">
+        <div class="col bg-dark text-white d-inline-flex justify-content-center">
+          <p class="banner-font my-1 me-md-5 d-none d-md-inline"><span class="me-2">-</span>Fast deliveries<span
+              class="ms-2">-</span></p>
+          <p class="banner-font my-1 mx-md-5"><span class="me-2">-</span>Free delivery on orders over
+            SEK {{ free_delivery_threshold }}<span class="ms-2">-</span></p>
+          <p class="banner-font my-1 ms-md-5 d-none d-md-inline"><span class="me-2">-</span>30 days open purchase<span
+              class="ms-2">-</span></p>
+        </div>
+      </div>
+    </nav>
   </header>
+
 
   {% if messages %}
   <div class="message-container">
@@ -152,7 +154,9 @@
 
   {% block content %}
   {% endblock %}
-
+  <footer class="d-none d-md-block">
+    {% include 'includes/footer.html' %}
+  </footer>
 
   {% block postloadjs %}
   <!-- Shows toasts -->
