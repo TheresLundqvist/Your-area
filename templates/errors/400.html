@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+<div class="container text-container">
+    <div class="overlay-bg mx-auto text-center">
+        <h1 class="overlay-text p-2">Bad Request</h1>
+        <p>Your Area is unable to handle this request</p>
+    </div>
+    <a href="{% url 'home' %}" class="btn btn-warning text-uppercase mt-5 position-absolute top-100 start-50 translate-middle pt-2">Home</a>
+</div>
+
+   
+{% endblock %}

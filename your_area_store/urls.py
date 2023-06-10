@@ -33,4 +33,7 @@ urlpatterns = [
     path('about/', include('about.urls')),
     path('gallery/', include('gallery.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+handler400 = 'your_area_store.views.handler400'
 handler404 = 'your_area_store.views.handler404'
+handler500 = 'your_area_store.views.handler500'
+handler403 = 'your_area_store.views.handler403'
