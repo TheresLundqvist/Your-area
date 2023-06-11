@@ -169,6 +169,7 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+
 /*  ------------------------------- Product Form */
 
 .btn-file {
@@ -268,6 +269,20 @@ section {
 
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
+}
+
+/* ------------------------------- Media Queries */
+
+/* Small devices (Mobile devices up to max 350px and up) */
+@media only screen and (max-width: 350px) {
+    .toast-checkout {
+        font-size: .9rem;
+    }
+
+    .toast {
+        width: 85vw;
+    }
+
 }
 
 /* ------------------------------- Media Queries */
