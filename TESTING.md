@@ -79,13 +79,25 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
-| About | Mobile | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
-| About | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
-| Gallery | Mobile | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
-| Gallery | Desktop | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | Mobile | ![screenshot](documentation/home-mobile-lighthouse.png) | Some minor warnings |
+| Home | Desktop | ![screenshot](documentation/home-desktop-lighthouse.png) | Few warnings |
+| Products | Mobile | ![screenshot](documentation/products-mobile-lighthouse.png) | Some minor warnings |
+| Products | Desktop | ![screenshot](documentation/products-desktop-lighthouse.png) | Few warnings |
+| Gallery | Mobile | ![screenshot](documentation/gallery-mobile-lighthouse.png) | Slow response time due to large images |
+| Gallery | Desktop | ![screenshot](documentation/gallery-desktop-lighthouse.png) | Slow response time due to large images |
+| About | Mobile | ![screenshot](documentation/about-mobile-lighthouse.png) | Slow response time due to large images |
+| About | Desktop | ![screenshot](documentation/about-desktop-lighthouse.png) | Slow response time due to large images |
+| Contact | Mobile | ![screenshot](documentation/contact-mobile-lighthouse.png) | Slow response time due to large images |
+| Contact | Desktop | ![screenshot](documentation/contact-desktop-lighthouse.png) | Slow response time due to large images |
+| Newsletter | Mobile | ![screenshot](documentation/newsletter-mobile-lighthouse.png) | Slow response time due to large images |
+| Newsletter | Desktop | ![screenshot](documentation/newsletter-desktop-lighthouse.png) | Slow response time due to large images |
+| FAQ | Mobile | ![screenshot](documentation/faqs-mobile-lighthouse.png) | Slow response time due to large images |
+| FAQ | Desktop | ![screenshot](documentation/faqs-desktop-lighthouse.png) | Slow response time due to large images |
+| Bag | Mobile | ![screenshot](documentation/bag-mobile-lighthouse.png) | Slow response time due to large images |
+| Bag | Desktop | ![screenshot](documentation/bag-desktop-lighthouse.png) | Slow response time due to large images |
+| Checkout | Mobile | ![screenshot](documentation/checkout-mobile-lighthouse.png) | Slow response time due to large images |
+| Checkout | Desktop | ![screenshot](documentation/checkout-desktop-lighthouse.png) | Slow response time due to large images |
+
 
 ## Defensive Programming
 
@@ -119,10 +131,39 @@ Defensive programming was manually tested with the below user acceptance testing
 | --- | --- | --- | --- | --- |
 | Home Page | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
+| | Searchbar in navigation | Performs search | Pass | |
+| | Click on bag icon | Redirection to shopping bag | Pass | |
+| | Click on shop now button | Redirection to products page | Pass | |
+| | Click on View Inspiration Gallery | Redirection to Gallery page | Pass | |
+| | Click on Contact in dropdown 'about' menu | Redirection to Contact page | Pass | |
+| | Click on About in dropdown 'about' menu | Redirection to About page | Pass | |
+| | Click on FAQ in dropdown 'about' menu | Redirection to FAQ page | Pass | |
+| | Click on Newsletter in dropdown 'about' menu | Redirection to Newsletter page | Pass | |
+| | Click on Product Management in 'user' menu | Redirection to add products page | Pass | |
+| | Click on Profile in 'user' menu | Redirection to profile page | Pass | |
+| | Click on Register in 'user' menu | Redirection to sign in page | Pass | |
+| | Click on Login in 'user' menu | Redirection to login page | Pass | |
+| | Click on Logout in 'user' menu | Redirection to sign out page | Pass | |
+| Products Page | | | | |
+| | Click on Product image | Redirection to Products details page | Pass | |
+| | Click on Edit link | Redirection to Edit Product page | Pass | |
+| | Click on Delete link | Deletes products | Pass | |
+| Products Page | | | | |
+| | Click on Add to bag button | Add product to bag | Pass | |
+| | Try to enter -1 or +99 with buttons | -/+ button disabled | Pass | |
+| | Try to manually type in -1 or +99 | Throws error message | Pass | |
+| | Click on Keep shopping button | Redirects to product page | Pass | |
+| | Click on Edit link | Redirection to Edit Product page | Pass | |
+| | Click on Delete link | Deletes products | Pass | |
+| | Click on Product image | Redirection to Products details page | Pass | |
+| | Click on Edit link | Redirection to Edit Product page | Pass | |
+| | Click on Delete link | Deletes products | Pass | |
+
+
+
+
+
+
 | Contact Page | | | | |
 | | Click on Contact link in navbar | Redirection to Contact page | Pass | |
 | | Enter first/last name | Field will accept freeform text | Pass | |
