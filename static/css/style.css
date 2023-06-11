@@ -205,7 +205,11 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: red;
+}
+
+.follow {
+    color: red !important;
 }
 
 footer a:hover {
