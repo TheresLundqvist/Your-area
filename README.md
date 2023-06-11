@@ -1,287 +1,410 @@
 # YOUR AREA
 
 Your Area is a home décor B2C e-commerce store. The site is targeted towards users who are interested in luxurious interior products.
-Users can browse and purchase a range of home decor and interior design products. They can also see reviews and comments from previous customers of the website.
+Users can browse and purchase a range of home decor and interior design products.
 
 The payment system uses Stripe.  
 **Please note that this website is for educational purposes, <u>do not</u> enter any personal credit/debit card details when using this site**.
-To test this system, test card details can be used. A list of these can be found in Stripe's documentation here.
-The live link can be found here - [Your Area](#)
+To test this system, test card details can be used. A list of these can be found in Stripe's documentation [here](https://stripe.com/docs/testing).  
 
-<img width="800" src="documentation/responsive.png">
+The live link to the website can be found here - [Your Area](https://your-area.herokuapp.com/)
+
+<img width="800" src="documentation/your-area-responsive.png">
 
 ## UX
 
-A visitor to Ski Resorts Locator would be someone who is most likely an adult who enjoys ski- and outdoor adventure and is curious to find the next ski resort to visit.
+A visitor to Your Area would be someone who is most likely an adult who is interested in buying design interior products.  
 
-## User Stories
+### User Stories
 
-### EPIC | Admin page
+#### EPIC | Site Navigation
+- As a Site user I can immediately understand the purpose of the site so that I can decide if it meets my needs.
+- As a Site user I can sort all products so that I can view products based on price or title.
+- As a Site user I can search all products so that I can find what I am looking for.
+- As a Site user I can click on a product so that I can read the full product details.
+- As a Site user I can view a list of products so that I can select a product to view.
+- As a Site user I can intuitively navigate around the site so that find content.
 
-- As a site administrator I can view my ski resorts so that I can manage all resorts I made in one place.
-- As a site admin I can edit and delete comments/star ratings I made so that I can manage any typos or misstakes.
-- As a site administrator I can create/read/update and delete ski resorts so that I can manage the app content.
-- As a admin I can edit and delete resorts that I created so that I can make changes without having to start over.
-- As a admin I can input details so that I can market and share our resort with others.
+#### EPIC | User Account
+- As a Site user I can recover my password in case I forget it so that I can regain access to my account.
+- As a Site user I can save my personal details in my user profile so that I do not have to fill them out for future orders.
+- As a Site user I can view my order history so that I can remember what purchases I've made
+- As a Site user I can see my login status so that I know if I'm logged in or out.
+- As a Site user I can register a account so that I can have a personal account.
+- As a Site User I can log in and out of my account so that I can keep my account secure.
 
-### EPIC | Rating and commenting
+#### EPIC | Purchasing
+- As a Site user I can view and recieve a order confirmation after checkout so that I know my purchase was successful.
+- As a Site user I can checkout as a guest so that I don't have to sign up for an account.
+- As a Site user I can view a the contents of my shopping cart at any time so that I can see what is included and the total cost.
+- As a Site user I can easily enter my payment information securely so that I can purchase my chosen products quickly with no issues.
+- As a Site user I can adjust the quantity of individual products in my cart so that I can easily make changes before I purchase.
+- As a Site user I can see a summary of my shopping cart when I checkout so that I know what products are included and the total cost before I commit to purchasing.
+- As a Site user, I can view a running total of my shopping cart as I am shopping so that I can see how much it costs in total.
+- As a Site user I can add several products in different quantities to my shopping cart so that I can purchase them all together when I am ready.
+- As a Site user I can save my personal details in my user profile so that I don't have to fill them out for future orders.
+- As a Site user I can view my order history so that I can keep track of my orders.
+- As a Site user I can view a specific category of products so that I can browse the type of products I'm looking for.
 
-- As a site user I can give ski resorts star rating so that other users can make a better assessment.
-- As a site user I can see the ski resorts with the best user rating on the site's main page so that I can get inspired at once.
-- As a site admin I can approve comments so that no objectionable comments is shown.
-- As a site user I can comment on ski resorts so that I can share my experience with others.
 
-### EPIC | Site Navigation
+#### EPIC | Admin
+- As a store owner I can add/edit/delete products through an easy-to-use interface so that I can manage the store's contents.
 
-- As a site user I can intuitively navigate around the site so that I can easily find content.
-- As a site user I can immediately understand the purpose of the site so that I can decide if it meets my needs.
-- As a site user I can click on a ski resort I am interested in so that I can get all the details for that resort.
-- As a site user I can see a list with all ski resorts so that I can choose a resort to visit.
+#### EPIC | User Interaction
+- As a Site user I can sign up for the website's newsletter so that I can keep up to date with new products and promotions.
 
-### EPIC | User Account
+#### User stories not yet implemented
 
-- As a site user I can see my log in status so that I can visually see if im logged in or out.
-- As a site user I can register an account so that I can add/edit/delete comments I made.
-- As a site user I can log in and out of my account so that I can keep my account secure.
+The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" or "Could have" on the project board on Github. It is intended that these user stories will be implemented at a later date. These User Stories are included in Your Area's backlog.
 
-### User Stories not yet implemented
-The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" and "Could Have" on the project board on Github. It is intended that these user stories will be implemented at a later date.
-
-- As a ski user I can find suggestions of activities in the area so that I can vary my stay.
-- As a site user I can find links to local ski rentals so that I can find the equipment I need.
-- As a site user I can find links to car rentals so that I can find a rental car as close to the ski resort as possible.
-- As a site user I can find suggestions for accommodations so that I can rely on finding the nearest.
-- As a site user I can view all my bookmarked ski resorts so that I can find them all in one place.
-- As a site user I can filter ski resorts so that I can find resorts in my area.
-- As a site user I can bookmark a ski resort so that I can find the resort easier at a later time.
-
-## Agile Methodology
-
-Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/users/TheresLundqvist/projects/1)
-
-The 5 Epics listed above were documented within the Github project as Labels. A Github Issue was created for each User Story which was then allocated to a label(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The user stories were also added and worked on in project iterations with a set deadline through Github milestones, this project was conducted through a total of 4 iterations. The user stories not yet to be finnished were added to a project backlog(milestone).
-  
-## Design
-
-The site has a very simple and clean design with a wintry color theme and good contrast.
+- As a Site owner I can approve comments so that no objectionable comments is shown.
+- As a Site user I can add products to my saved items so that I can go back and view them at a later date.
+- As a Site user I can give products star ratings and comments so that other users can make a better assessment.
 
 ### Colour Scheme
 
-I used [coolors.co](https://coolors.co/e84610-112b3c-ffffff-5d646b) to generate my colour palette.
-
-<img width="800" src="documentation/colour-scheme.png">  
-
-The colour scheme of the site is mainly golden gate bridge-orange, dark blue and White. The colours chosen are wintry white and blue and with orange to give good contrast.
+The colour scheme of the site is mainly white and dark grey. The colours chosen are neutral in order to showcase the Home Décor Products with minimal distraction. 
 
 Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility.
 
-- **#E84610** used for primary highlights, icons and buttons.
-- **#112B3C** used for brand, headings and hoover effects on buttons.
-- **#FFFFF** used for backgrounds
-- **#5D646B** used for footer text.
+I used [coolors.co](https://coolors.co/343a40-ffffff-f8f9fa-564592) to generate my colour palette.
 
-### Fonts
+![screenshot](documentation/your-area-coolors.png)
 
-Josefin Sans is the main font used for the body of the website with the only exeption of using Tilt Neon for the sub heading in the main image caraousel. These fonts were imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
+### Typography  
 
-- [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans?query=josefin+sans) was used for the body content.
+The Josefin Sans font is the main font used for the body of the website. This font was imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
 
-- [Tilt Neon](https://fonts.google.com/specimen/Tilt+Neon?query=tilt+neon) was used for sub heading in main image caraousel.
+- [Josefin Sans](https://fonts.google.com/specimen/Montserrat) was used for the main content.
 
-### Icons
-
-Icons from Font Awesome is used throughout the site, such as brand icon, search bar magnifying glass, star rating, social media icons and icons for heading in resort details.
-
+- [Playfair Display](https://fonts.google.com/specimen/Lato) was used for the overlay of the main image in the home page.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
-### Imagery
-
-A total of five static images is used for the website. Three static images is used for the main image caraousel. One is used as a placeholder image for the resorts if the user chooses not to upload a image/images for a resort. The last static image uploaded to the app is used for the about page. The rest of the imagery will be uploaded and stored in Cloudinary by admin when creating the individual resorts.  
-
 ## Wireframes
 
-I've used [Miro](https://miro.com/app/dashboard/) to design my sites wireframes.
+<details>
 
-### Home Page Wireframes
+ <summary>Home Page</summary>
+
+![Home Page](#)
+</details>
 
 <details>
-<summary>Home Page</summary>  
-<strong>Desktop View</strong>  
 
-<img width="600" src="documentation/wireframes/landing-page.png">  
-  
-<strong>Mobile</strong>  
-<img width="150" src="documentation/wireframes/landingpage-mobile.png">  
-</details>  
+ <summary>Products Page</summary>
+
+![Products Page](#)
+</details>
 
 <details>
-<summary>Resort Details page</summary>  
-<strong>Desktop View</strong>  
 
-<img width="600" src="documentation/wireframes/resort-details.png">  
-  
-<strong>Mobile</strong>  
-<img width="150" src="documentation/wireframes/resortdetails-mobile.png">  
-</details>  
+ <summary>Contact Page</summary>
+
+![Contact Page](#)
+</details>
+
 <details>
-<summary>About page</summary>  
-<strong>Desktop View</strong>  
 
-<img width="600" src="documentation/wireframes/about-page.png">  
-  
-<strong>Mobile</strong>  
-<img width="150" src="documentation/wireframes/aboutpage-mobile.png">  
-</details>  
+ <summary>About Page</summary>
+
+![About Page](#)
+</details>
+
 <details>
-<summary>Contact page</summary>  
-<strong>Desktop View</strong>  
 
-<img width="600" src="documentation/wireframes/contact-page.png">  
-  
-<strong>Mobile</strong>  
-<img width="150" src="documentation/wireframes/contactpage-mobile.png">  
-</details>  
+ <summary>Gallery Page</summary>
+
+![Gallery Page](#)
+</details>
+
 <details>
-<summary>Account pages</summary>  
-<strong>Desktop View</strong>  
 
-<img width="600" src="documentation/wireframes/sign-in.png">  
-<img width="600" src="documentation/wireframes/sign-out.png">  
-<img width="600" src="documentation/wireframes/sign-up.png">  
-  
-<strong>Mobile</strong>  
-<img width="150" src="documentation/wireframes/signin-mobile.png">  
-<img width="150" src="documentation/wireframes/signout-mobile.png">  
-<img width="150" src="documentation/wireframes/signup-mobile.png">  
-</details>  
+ <summary>Bag Page</summary>
 
+![Bag](#)
+</details>
+
+<details>
+
+ <summary>Checkout Page</summary>
+
+![Checkout Page](#)
+</details>
+
+<details>
+
+ <summary>Order Confirmation</summary>
+
+![Order Confirmation](#)
+</details>
+
+<details>
+
+ <summary>Profile</summary>
+
+![Profile](#)
+</details>
+
+<details>
+
+ <summary>Product Management</summary>
+
+![Product Management](#)
+</details>
 
 ## Features
 
 ### Header
+![header](documentation/header.png)
 
-<img width="800" src="documentation/header.png">  
+**Logo**
+- A customised logo was created using Microsoft Word and then adding a border using CSS styling.
+- This logo is positioned in the center underneath the first navigation bar. The logo is linked to the home page for ease of navigation for the user.
 
-**Logo**  
-A customised logo was created by me using Microsoft Word. This logo is positioned in the top left of the navigation bar. The logo is linked to the home page for ease of navigation for the user.  
-  
-**Navigation**  
-The navigation bar is present at the top of every page and includes all links to the various other pages. The More navigation link is a drop down menu which includes a view all link and the Contact and About pages. When the user has logged in, the login link changes to display log out instead, giving the user their logged in status.
+**Navigation Bar**
+
+- The navigation bar is visible at the top of every page and includes links to the other pages.
+
+**Search Bar**
+
+![Search](documentation/searchbar.png)
+- The search bar displays in the top navbar.
+- On smaller screens, this bar becomes a search icon which when clicked will drop down the full bar.
+- Any searched word will match itself to any text in the product's title, or description and display the results on the product's page.
+
+**User Icon**
+
+- The User icon navigation link is a drop down menu which includes the Sign up and Log in links. 
+- The options to Sign up or Log in will change to the option to log out once a user has logged in.
+- Once a user has signed in, the 'Product Management' option becomes available in the User dropdown.
+
+![Logged In](documentation/icons.png)
+- If the superuser has signed in, one more option 'Product Management' become available in the User dropdown.
+
+**Bag Icon**
+
+![bag](documentation/bag.png)
+- Located on the right side of the navbar next to the User icon is the bag Icon.
+- Once a product is added to the bag, a number displaying in blue of the total quantity of items appears, located at the bottom of the bag icon.
+- As the user adds products to their bag, a toast message appears in the top right-hand corner of the screen informing the user that the item has been added, giving them a snapshot of the bag contents and the total cost of the bag.
+
+![bag total](documentation/bag-toast.png)
+- Clicking the "Go to secure checkout" button navigates the user to the shopping bag page which displays a summary of what's been added.
 
 ### Footer
 
-<img width="800" src="documentation/footer.png">  
+![footer](documentation/footer.png)
 
-The footer section includes links to Facebook, Instagram, Twitter and Youtube. Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
-  
-### Home Page  
-  
-**Main Image Carousel**  
-  
-<img width="800" src="documentation/main-carousel.png">  
-  
-The home page includes a bootstrap image carousel that alternates thorugh three images with diffrent encouraging and telling texts about the ski resorts website and then a view all button which links to the resort cards to view all the resorts on the website.  
+- The footer appears at the bottom of every page.
+- The footer section includes links to Facebook, Instagram, Twitter and Pinterest.
+- The Quick Links section has links to the main parts of the site including 'Contact Us' and 'Privacy Policy'.
+- On the right hand side of the footer there are links to websites including Tradepartner Sweden, Secure e-commerce trade in Sweden, and the swedish mailservice Postnord. These links were included to increase the search rating of the website.
+- Clicking all external links will open up the respective website in another tab to avoid pulling the user away from the site.
 
-- Find the Ski Resort best suited for you - All resort listed in one place  
-- Get inspired >> Go Skiing - See all the amenities for the resort
-- Secure a great ski experience - Read customer experience and leave yours
+### Home Page
 
-**Resort cards**
+**Call to Action Section**
 
-<img width="800" src="documentation/resort-cards.png">  
-  
-The resort cards gives the user a glimpse over the diffrent resorts on the webiste. The user can preview the resort through a image, see a preview of the resort description and a read more button that takes the user to the full detailed resort page. The resort cards are intented to give the user the possibility to overview the diffrent resorts in a clean and organized way, get inspired and then let them decide which resort they want a more detailed view over. The resort rating counter is visable on the cards and in the full view, so that the user instantly can see which resort has the best rating. 
+![Home page](documentation/home-calltoaction.png)
 
-### Resort details page 
-  
-**Resort description**  
-  
-<img width="800" src="documentation/resortdetails-description.png">  
-  
-After the resort image a detailed description of the resort follows. It is a descriptive text that sums up the listed features of the resort. This textfield creates a more painted picture for the user. Underneath the description a bootstrap image carousel shuffles three images of the resort to give the user some inspiration and overview of the resort.
-  
-**Resort listed features**  
-  
-<img width="800" src="documentation/resortdetails-listed.png">  
-  
-This list is an overview of the resort amenities. The user can find useful information before their planned visit such as opening hours and prices. If a user is in need of a particular lift, they can find all lifting arrangements available for the resort in this listed view. This view is intended as a quick and clean way for the user to get an fast overview of the resort and what they offer.
+- The home page includes a call to action section which encourages the user to 'shop now' with the message "Buy Home Décor and Interior Designs online" and an image of a stylish yellow pop of color armchair. 
 
-**Rating and comments counter**  
-  
-<img width="800" src="documentation/rating-comment-symbols.png">  
-  
-The counters for rating and comments give the user a fast assessment of the resort. They can see how many likes and comments the resort has gotten from other users. Users can use the share icon to share the page and resort with others.  
-  
-**Comments**  
-  
-<img width="800" src="documentation/comments.png">  
-  
-All users can view all comments made by others, but only logged-in users can leave a comment. The comments are only visable after and if admin approves. The user receives a message notifying them that the comment is awaiting approval before being published.
+**About Section**
 
-**Rating** 
+![About](documentation/about.png)
 
-<img width="800" src="documentation/rating.png">  
+- The about section gives a brief overview of what the site has to offer and includes relevant keywords in `<strong></strong>` tags to improve the site's search ranking.
 
-Users can see the average rating for each resort in the preview cards but also in the full detailed view. Logged in users can leave rating along with a comment to better help others make a descision on which resort to visit next.
+### User Account Pages
+
+**Sign Up**
+
+![Sign Up](documentation/sign-up.png)
+
+**Sign In**
+
+![Sign In](documentation/sign-in.png)
+
+**Log Out**
+
+![Sign Out](documentation/sign-out.png)
+
+- Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
+- Success messages inform the user if they have logged in/ logged out successfully.
+- When a user signs up for an account they must verify their email address by clicking on the authentication link emailed  to the address they provided.
+- If a user forgets their password they can reset it by clicking the 'Forgot Password' on the log in page.
 
 
-**Edit and delete comments**  
+### Profile
+**Delivery Details**
 
-<img width="400" src="documentation/edit-delete-comment.png">  
-  
-<img width="400" src="documentation/edit-comment.png">  
-  
-<img width="400" src="documentation/delete-comment.png">  
-  
-All logged in users can edit and delete their own comments. The edit and delete links are only visable on the comments made my the logged in user. When user clicks on the edit link they will be redirected to a new edit page, the comment will disappear from the website after the edit until Admin approves of the edited comment.  
+![Delivery Details](documentation/footer.png)
+- The delivery details section stores the user's delivery address and phone number.
+- The information provided here is used to autofill the delivery address when placing an order.
+
+**Order History**
+
+![Order History](docs/readme_images/features/order_history.png)
+- The order history section displays a list of every order the user has placed.
+- The table displays the order number, date it was ordered and the order total.
+- Clicking the order number will take the user to a summary page of that order.
+
+### Products
+
+![all products](docs/readme_images/features/products_all.png)
+- When clicking the 'Home Decor' link in the navbar the dropdown menu will show all the different categories including 'Sofas', 'Tables', 'Chairs', 'Lighting' and 'Textiles'. 
+
+![Categories](docs/readme_images/features/categories.png)
+- The 'All' link will display a list of all products from the database.
+- Clicking any of the categories will filter the products to only show products from the category selected.
+- The category selected will display as the page heading.
+
+![products](docs/readme_images/features/products.png)
 
 
-### About page  
-  
-<img width="800" src="documentation/aboutpage-screenshot.png">  
-  
-The about page gives the user a short background story about the website to the user. 
+- Each product card shows an image of the product, its title, excerpt and price.
+- If the user is a superuser, edit and delete buttons will appear at the bottom of the product card.
+- The products page is fully responsive, adjusting how many products are on each row depending on the user's screen size.
+- A sort box is located on the products page where users can sort all products by price in ascending or descending order and by title (A-Z).
 
-### Contact page  
-  
-<img width="400" src="documentation/contactpage-screenshot.png">  
-  
-The contact page gives the user the opportunity to contact the website with questions or other subjects surrounding the website.  
+![sort](docs/readme_images/features/sort.png)
 
-### Account pages  
+### Product Detail
 
-Django allauth was installed and used to create the Sign up, Log in and Log out functionality. Success messages inform the user if they have logged in/ logged out successfully.
+![Product Detail](docs/readme_images/features/product_detail.png)
+- When the user clicks on an individual product card they are taken to the full product details. The link is a bootstrap stretched link so clicking anywhere on the card will work.
+- The product detail page displays the product image, title, excerpt, price, product details and estimated dispatch time.
+- If the user is a superuser, edit and delete buttons will appear below these details.
 
-**Register**  
+**Quantity Buttons**
+- The quantity buttons are located underneath the product details and are used to add items to the bag.
+- The plus and minus buttons increase and decrease the input value.
+- If the value is set to 1 the minus quantity will be disabled. Respectively if the value is set to 99 the plus button is disabled.
+- If the user manually types in a negative number or a number >99 and clicks "Add to Bag" an error button will appear informing the user of the parameters needed to be successful.
+- Clicking the 'Add to Bag' button takes the number in the input field and adds that amount of products to the bag.
+- Clicking the 'Keep Shopping' button takes the user back to the store.
 
-<img width="400" src="documentation/signup-page.png">  
+### Product Management
+**Add Product**
 
-**Sign in**  
-  
-<img width="400" src="documentation/signin-page.png">  
+![add product](docs/readme_images/features/add_product.png)
+- The add product page can be accessed by clicking the 'Add Product' button on the Home Decor page or in the user dropdown menu, under Home Decor Management. These options are only visible to superusers.
+- If a user tries to add a product (by changing the url) without being a superuser they are redirected to a custom 403 page.
+- The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
+- The SKU field must be unique. An error message will appear if the SKU already exists.
+- If a price is added with more than 6 digits the form will fail and an error message will appear under the price field.
+- The user can upload a photo if they wish. If they choose not to, a default image displays as their product image.
+- Clicking the 'Add Product' button at the bottom of the form will create the product providing there are no errors on the form.
+-  The user will receive a success message notifying them that the product has been successfully added.
 
-**Sign out**  
-  
-<img width="400" src="documentation/signout-page.png"> 
+**Edit Product**
 
-## Future Features
+![edit product](docs/readme_images/features/edit_product.png)
+- The superuser can choose to edit a Product by clicking the edit button on the product card or on the product detail page. 
+- The form opens with all fields populated with the original content.
+- The image field displays a thumbnail of the existing image and has a checkbox option to remove it. Checking this will change the image to the default image.
+- If a user tries to add a product (by changing the url) without being a superuser they are redirected to a custom 403 page.
+- The superuser will receive a success message notifying them that the product has been successfully updated.
 
-The following user stories were scoped out of the project due to time constraints and labelled as "Won't have" and "Could Have" on the project board in Github. It is intended that these user stories will be implemented at a later date.  
+**Delete Product**
 
-- As a ski user I can find suggestions of activities in the area so that I can vary my stay.
-- As a site user I can find links to local ski rentals so that I can find the equipment I need.
-- As a site user I can find links to car rentals so that I can find a rental car as close to the ski resort as possible.
-- As a site user I can find suggestions for accommodations so that I can rely on finding the nearest.
-- As a site user I can view all my bookmarked ski resorts so that I can find them all in one place.
-- As a site user I can filter ski resorts so that I can find resorts in my area.
-- As a site user I can bookmark a ski resort so that I can find the resort easier at a later time.
+![delete product](docs/readme_images/features/delete_product.png)
+- The superuser can choose to delete a Product by clicking the delete button on the product card or on the product detail page. 
+- The superuser is asked to confirm if they wish to delete the product or cancel.
+- The superuser will receive a success message notifying them that the product has been successfully deleted.
 
+### Bag
+
+![shopping bag](docs/readme_images/features/shopping_bag.png)
+- When the user clicks on the shopping bag icon in the nav bar they are taken to the shopping bag page which shows the products which the user has added to their cart, unit price, quantity and subtotal.
+
+**Quantity Buttons**
+- The quantity input box displays the product quantity the user has added to their bag.
+- The plus and minus buttons increase and decrease the input value.
+- If the value is set to 1 the minus quantity will be disabled. Respectively if the value is set to 99 the plus button is disabled.
+
+**Update and Delete Buttons**
+
+![Update Delete buttons](docs/readme_images/features/update_delete_buttons.png)
+- Clicking the 'update' icon button saves any changes to the quantity and updates the item's subtotal.
+- Clicking the 'Bin' icon button removes the item completely from the user's bag.
+- If the user manually types in a negative number and clicks 'update', the item will be removed from the item from the bag.
+- If the user manually types in a number >99 and clicks 'update' an error message will display informing the user of the correct parameters.
+
+**Total Section**
+- At the end of the line items is a summary of the costs.
+- The summary features the bags total, delivery cost and the grand total to pay.
+- Underneath the grand total users will find a message informing them of how much more they need to spend to receive free delivery if they haven't already met the free delivery threshold (€250). 
+- Beneath the grand total is two buttons. From here the user can either continue to the checkout or return to the products page by clicking 'Continue Shopping'.
+
+### Checkout 
+
+![checkout](docs/readme_images/features/checkout.png)
+
+**Details**
+- Within the details section the user can fill out their contact details, delivery address, and card number.
+- If the user is a guest, a link to create an account or login will be present.
+- If the user is signed in a checkbox to save the delivery information can be checked.
+- If the user is signed in and has delivery information saved, the delivery details and email address will be automatically filled in.
+- If a user leaves a required field empty, inputs whitespace in a required field or includes text in the phone number field an error message will prompt the user to 'Fill in the field' or 'match the format requested'
+
+**Order Summary**
+- The order summary section details all the items about to be purchased, along with the quantity, subtotal and a grand total.
+- Next to the order summary title will be a number reflecting the total number of items that appear in the order.
+- Clicking the product image in the summary will take the user to that product's detail page.
+
+**Payment**
+- The card payment is handled by Stripe to ensure secure payment.
+- Incorrect card numbers will automatically show an invalid card number error.
+- A loading screen will appear when a payment is being processed to stop the user clicking away.
+- There is a warning message at the bottom of the page informing the user of how much their card is about to be charged.
+- If the payment form doesn't submit properly or the user closes the browser during the wait animation, the order will still be created in the database through the webhook. 
+- Once the payment is processed, the webhook will search the database to confirm the order exists. If it cannot find it, it will create one using the payment information.
+
+**Confirmation**
+
+![order_confirmation](docs/readme_images/features/order_confirmation.png)
+- Once the order has been processed the user is taken to the checkout success page.
+This page summarises the completed order.
+- An email will be sent to the user with their order confirmation
+- At the end of the summary is a 'Keep Shopping' button that takes the user back to the Home Decor page.
+
+### Contact Form
+
+![Enquiry Form](docs/readme_images/features/enquiry_form.png)
+- A user can open up the contact form by clicking on the "Enquire Now" button on the Interior Design Services page or by clicking the 'Contact' button in the Nav bar.
+- If the user is logged in, the email field is prepopulated with the user's email address. 
+- The form contains a drop down menu where the user can select the type of enquiry from a list so that the site owner knows what the enquiry is about.
+- The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
+- When the form is submitted, the user receives an email confirmation of their enquiry so that they have a record of it.
+
+### Error Pages
+Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
+
+![403 error](docs/readme_images/features/403_error.png)
+
+- 400 Bad Request - Fresh Nest is unable to handle this request.
+- 403 Page Forbidden - Looks like you're trying to access forbidden content. Please log out and sign in to the correct account.
+- 404 Page Not Found - The page you're looking for doesn't exist.
+- 500 Server Error - Due to an internal error we are unable to process this request.
 
 ## Tools & Technologies Used
 
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+In this section, you should explain the various tools and technologies used to develop the project.
+Make sure to put a link (where applicable) to the source, and explain what each was used for.
+Some examples have been provided, but this is just a sample only, your project might've used others.
+Feel free to delete any unused items below as necessary.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
+- [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -289,32 +412,220 @@ The following user stories were scoped out of the project due to time constraint
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
+- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
+- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Cloudinary](https://cloudinary.com) used for online static file storage.
-- [Miro](https://miro.com/app/dashboard) used to generate wireframe images.
-- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) used for overall development and tweaking, including testing responsiveness and performance.
-- [Font Awesome](https://fontawesome.com/) used for icons throughout the site.
-- [Google Fonts](https://fonts.google.com/) used to import and alter fonts on the page.
-- [W3C](https://validator.w3.org/#validate_by_input) used for HTML & CSS Validation.
-- [Coolors](https://coolors.co/) used to create colour palette.
-- [Icons 8](https://icons8.com/icons/set/favicon) Used to create the favicon.
-- [Grammerly](https://app.grammarly.com/) used to proof read the README.md.
-- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to manage Django Forms.
-- [Cloudinary](https://cloudinary.com/) used for uploading the images and hosting them.
-- [SmartDraw](https://www.smartdraw.com/) used to create the database schema design.
-
+- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
+- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
 
 ## Database Design
 
-I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views. Django AllAuth was used for the user authentication system.
-In order to create resort to the webiste a custom resort model was required. The Comment model allows users to comment on resorts and the resort is a foreign key in the comment model given a comment can only be linked to one resort. The contact model is non-relational model as it is only for the users to be able to communicate with the website's owner/admin. The rating model allows logged in users to leave a rating and therefore the resort and user fields are foreign keys given that user must be logged in and the rating can only be linked to one resort.
+Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
+Understanding the relationships between different tables can save time later in the project.
 
-The diagram below details the database schema.
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-<img width="700" src="documentation/datamodels.png"> 
+Using your defined models (one example below), create an ERD with the relationships identified.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+```python
+class Product(models.Model):
+    category = models.ForeignKey(
+        "Category", null=True, blank=True, on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=254, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    description = models.TextField()
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    rating = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+```
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+A couple recommendations for building free ERDs:
+- [Draw.io](https://draw.io)
+- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+![screenshot](documentation/erd.png)
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Using Markdown formatting to represent an example ERD table using the Product model above:
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+- Table: **Product**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | category | ForeignKey | FK to **Category** model |
+    | | sku | CharField | |
+    | | name | CharField | |
+    | | description | TextField | |
+    | | has_sizes | BooleanField | |
+    | | price | DecimalField | |
+    | | rating | DecimalField | |
+    | | image_url | URLField | |
+    | | image | ImageField | |
+
+## Agile Development Process
+
+### GitHub Projects
+
+[GitHub Projects](https://github.com/TheresLundqvist/Your-area/projects) served as an Agile tool for this project.
+It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
+
+Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Consider adding a basic screenshot of your Projects Board.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+![screenshot](documentation/gh-projects.png)
+
+### GitHub Issues
+
+[GitHub Issues](https://github.com/TheresLundqvist/Your-area/issues) served as an another Agile tool.
+There, I used my own **User Story Template** to manage user stories.
+
+It also helped with milestone iterations on a weekly basis.
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Consider adding a screenshot of your Open and Closed Issues.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+- [Open Issues](https://github.com/TheresLundqvist/Your-area/issues)
+
+    ![screenshot](documentation/gh-issues-open.png)
+
+- [Closed Issues](https://github.com/TheresLundqvist/Your-area/issues?q=is%3Aissue+is%3Aclosed)
+
+    ![screenshot](documentation/gh-issues-closed.png)
+
+### MoSCoW Prioritization
+
+I've decomposed my Epics into stories prior to prioritizing and implementing them.
+Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
+- **Could Have**: has small impact if left out (*20% of stories*)
+- **Won't Have**: not a priority for this iteration
+
+## Ecommerce Business Model
+
+This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
+It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
+such as monthly/annual subscriptions.
+
+It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
+
+Social media can potentially build a community of users around the business, and boost site visitor numbers,
+especially when using larger platforms such a Facebook.
+
+A newsletter list can be used by the business to send regular messages to site users.
+For example, what items are on special offer, new items in stock,
+updates to business hours, notifications of events, and much more!
+
+## Search Engine Optimization (SEO) & Social Media Marketing
+
+### Keywords
+
+I've identified some appropriate keywords to align with my site, that should help users
+when searching online to find my page easily from a search engine.
+This included a series of the following keyword types
+
+- Short-tail (head terms) keywords
+- Long-tail keywords
+
+I also played around with [Word Tracker](https://www.wordtracker.com) a bit
+to check the frequency of some of my site's primary keywords (only until the free trial expired).
+
+### Sitemap
+
+I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
+This was generated using my deployed site URL: https://your-area.herokuapp.com
+
+After it finished crawling the entire site, it created a
+[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
+
+### Robots
+
+I've created the [robots.txt](robots.txt) file at the root-level.
+Inside, I've included the default settings:
+
+```
+User-agent: *
+Disallow:
+Sitemap: https://your-area.herokuapp.com/sitemap.xml
+```
+
+Further links for future implementation:
+- [Google search console](https://search.google.com/search-console)
+- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
+- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
+- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
+
+### Social Media Marketing
+
+Creating a strong social base (with participation) and linking that to the business site can help drive sales.
+Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
+
+I've created a mockup Facebook business account using the
+[Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
+provided by Code Institute.
+
+![screenshot](documentation/mockup-facebook.png)
+
+### Newsletter Marketing
+
+I have incorporate a newsletter sign-up form on my application, to allow users to supply their
+email address if they are interested in learning more. 
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Option 1 (MailChimp):
+- Sign up for a Mailchimp account
+- This allows up to 2,500 subscription email sends per month
+- Incorporate the code and scripts into your project like in the CI lessons.
+
+Option 2 (Django):
+- Create a custom newsletter app in your project, with a custom model.
+- This method satisfies two assessment criteria:
+    - include a newsletter
+    - one of your custom models
+- It doesn't need anything except the "email" on the model.
+- Example:
+    ```python
+    class Newsletter(models.Model):
+    email = models.EmailField(null=False, blank=False)
+
+    def __str__(self):
+        return self.email
+    ```
+- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
+    - You can trigger an email sent out to subscribed users when new products are added to the site!
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Testing
 
@@ -322,7 +633,16 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
-The live deployed application can be found deployed on [Heroku](https://ski-resorts-locator.herokuapp.com).
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+**IMPORTANT:**
+- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
+- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
+- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+The live deployed application can be found deployed on [Heroku](https://your-area.herokuapp.com).
 
 ### ElephantSQL Database
 
@@ -330,21 +650,180 @@ This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL 
 
 To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
 - Click **Create New Instance** to start a new database.
-- Provide a name (this is commonly the name of the project: Ski-resorts).
+- Provide a name (this is commonly the name of the project: Your-area).
 - Select the **Tiny Turtle (Free)** plan.
 - You can leave the **Tags** blank.
 - Select the **Region** and **Data Center** closest to you.
 - Once created, click on the new database name, where you can view the database URL and Password.
 
-### Cloudinary API
+### Amazon AWS
 
-This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
+This project uses [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
 
-To obtain your own Cloudinary API key, create an account and log in.
-- For *Primary interest*, you can choose *Programmable Media for image and video API*.
-- Optional: *edit your assigned cloud name to something more memorable*.
-- On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
-- Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
+Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
+Make sure you're on the **AWS Management Console** page.
+
+#### S3 Bucket
+
+- Search for **S3**.
+- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
+- Uncheck **Block all public access**, and acknowledge that the bucket will be public (required for it to work on Heroku).
+- From **Object Ownership**, make sure to have **ACLs enabled**, and **Bucket owner preferred** selected.
+- From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
+- From the **Permissions** tab, paste in the following CORS configuration:
+
+	```shell
+	[
+		{
+			"AllowedHeaders": [
+				"Authorization"
+			],
+			"AllowedMethods": [
+				"GET"
+			],
+			"AllowedOrigins": [
+				"*"
+			],
+			"ExposeHeaders": []
+		}
+	]
+	```
+
+- Copy your **ARN** string.
+- From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
+	- Policy Type: **S3 Bucket Policy**
+	- Effect: **Allow**
+	- Principal: `*`
+	- Actions: **GetObject**
+	- Amazon Resource Name (ARN): **paste-your-ARN-here**
+	- Click **Add Statement**
+	- Click **Generate Policy**
+	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
+
+		```shell
+		{
+			"Id": "Policy1234567890",
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Sid": "Stmt1234567890",
+					"Action": [
+						"s3:GetObject"
+					],
+					"Effect": "Allow",
+					"Resource": "arn:aws:s3:::your-bucket-name/*"
+					"Principal": "*",
+				}
+			]
+		}
+		```
+
+	- Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
+	- Click **Save**.
+- From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
+	- If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
+
+#### IAM
+
+Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
+Once on the IAM page, follow these steps:
+
+- From **User Groups**, click **Create New Group**.
+	- Suggested Name: `group-your-area` (group + the project name)
+- Tags are optional, but you must click it to get to the **review policy** page.
+- From **User Groups**, select your newly created group, and go to the **Permissions** tab.
+- Open the **Add Permissions** dropdown, and click **Attach Policies**.
+- Select the policy, then click **Add Permissions** at the bottom when finished.
+- From the **JSON** tab, select the **Import Managed Policy** link.
+	- Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
+	- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
+
+		```shell
+		{
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Effect": "Allow",
+					"Action": "s3:*",
+					"Resource": [
+						"arn:aws:s3:::your-bucket-name",
+						"arn:aws:s3:::your-bucket-name/*"
+					]
+				}
+			]
+		}
+		```
+	
+	- Click **Review Policy**.
+	- Suggested Name: `policy-your-area` (policy + the project name)
+	- Provide a description:
+		- "Access to S3 Bucket for your-area static files."
+	- Click **Create Policy**.
+- From **User Groups**, click your "group-your-area".
+- Click **Attach Policy**.
+- Search for the policy you've just created ("policy-your-area") and select it, then **Attach Policy**.
+- From **User Groups**, click **Add User**.
+	- Suggested Name: `user-your-area` (user + the project name)
+- For "Select AWS Access Type", select **Programmatic Access**.
+- Select the group to add your new user to: `group-your-area`
+- Tags are optional, but you must click it to get to the **review user** page.
+- Click **Create User** once done.
+- You should see a button to **Download .csv**, so click it to save a copy on your system.
+	- **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
+	- This contains the user's **Access key ID** and **Secret access key**.
+	- `AWS_ACCESS_KEY_ID` = **Access key ID**
+	- `AWS_SECRET_ACCESS_KEY` = **Secret access key**
+
+#### Final AWS Setup
+
+- If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
+- Back within **S3**, create a new folder called: `media`.
+- Select any existing media images for your project to prepare them for being uploaded into the new folder.
+- Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
+- No further settings are required, so click **Upload**.
+
+### Stripe API
+
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
+
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+	- `https://your-area.herokuapp.com/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+	- Any custom name, such as "Django" or Your-area
+- You'll be provided with a 16-character password (API key).
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = user's 16-character API key
+	- `EMAIL_HOST_USER` = user's own personal Gmail email address
 
 ### Heroku Deployment
 
@@ -358,10 +837,17 @@ Deployment steps are as follows, after account setup:
 
 | Key | Value |
 | --- | --- |
-| `CLOUDINARY_URL` | user's own value |
+| `AWS_ACCESS_KEY_ID` | user's own value |
+| `AWS_SECRET_ACCESS_KEY` | user's own value |
 | `DATABASE_URL` | user's own value |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
+| `EMAIL_HOST_PASS` | user's own value |
+| `EMAIL_HOST_USER` | user's own value |
 | `SECRET_KEY` | user's own value |
+| `STRIPE_PUBLIC_KEY` | user's own value |
+| `STRIPE_SECRET_KEY` | user's own value |
+| `STRIPE_WH_SECRET` | user's own value |
+| `USE_AWS` | True |
 
 Heroku needs two additional files in order to deploy properly.
 - requirements.txt
@@ -405,9 +891,15 @@ Sample `env.py` file:
 ```python
 import os
 
-os.environ.setdefault("CLOUDINARY_URL", "user's own value")
+os.environ.setdefault("AWS_ACCESS_KEY_ID", "user's own value")
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "user's own value")
 os.environ.setdefault("DATABASE_URL", "user's own value")
+os.environ.setdefault("EMAIL_HOST_PASS", "user's own value")
+os.environ.setdefault("EMAIL_HOST_USER", "user's own value")
 os.environ.setdefault("SECRET_KEY", "user's own value")
+os.environ.setdefault("STRIPE_PUBLIC_KEY", "user's own value")
+os.environ.setdefault("STRIPE_SECRET_KEY", "user's own value")
+os.environ.setdefault("STRIPE_WH_SECRET", "user's own value")
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
@@ -422,22 +914,26 @@ Once the project is cloned or forked, in order to run it locally, you'll need to
 - Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
 - Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
 
+If you'd like to backup your database models, use the following command for each model you'd like to create a fixture for:
+- `python3 manage.py dumpdata your-model > your-model.json`
+- *repeat this action for each model you wish to backup*
+
 #### Cloning
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/TheresLundqvist/Ski-resorts) 
+1. Go to the [GitHub repository](https://github.com/TheresLundqvist/Your-area) 
 2. Locate the Code button above the list of files and click it 
 3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
-	- `git clone https://github.com/TheresLundqvist/Ski-resorts.git`
+	- `git clone https://github.com/TheresLundqvist/Your-area.git`
 7. Press Enter to create your local clone.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/TheresLundqvist/Ski-resorts)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/TheresLundqvist/Your-area)
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
@@ -447,39 +943,93 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/TheresLundqvist/Ski-resorts)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/TheresLundqvist/Your-area)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
 ### Local VS Deployment
 
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
 Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
 
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Credits
 
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+In this section you need to reference where you got your content, media, and extra help from.
+It is common practice to use code from other repositories and tutorials,
+however, it is important to be very specific about these sources to avoid plagiarism.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
 ### Content
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
+A few examples have been provided below to give you some ideas.
+
+Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [W3Schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) | Media Queries | Common breaking points for media queries |
+| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
+| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
+| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
+| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
+| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
+| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
 | [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
+| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
+| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
+| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
-| [Django Docs](https://docs.djangoproject.com/en/4.2/)
-| [Bootstrap Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-| [Code Institute Boutique Ado Walkthrough Project](https://github.com/Code-Institute-Solutions/boutique_ado)
-
 
 ### Media
 
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
+A few examples have been provided below to give you some ideas.
+
+If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
+Let the assessors know that you have explicit rights to use the media files within your project.
+
+Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
+The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
+by sending yourself the following command: `!freemedia`.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | All imagery on the site was sourced from Pexels.com |
-| [Favicon](https://favicon.io/) | entire site | image | Favicon for website |
-| [Font Awesome](https://fontawesome.com/) | entire site | image | All icons for the site |  
-  
+| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
+| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
+| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
+| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
+| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
+| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
+| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
+| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
+| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+
 ### Acknowledgements
+
+⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+
+Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
+A few examples have been provided below to give you some ideas.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
+- I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
+- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
