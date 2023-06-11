@@ -11,9 +11,21 @@ The live link to the website can be found here - [Your Area](https://your-area.h
 
 <img width="800" src="documentation/your-area-responsive.png">
 
-## UX
+## Agile Methodology
+Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/users/TheresLundqvist/projects/3)
 
-A visitor to Your Area would be someone who is most likely an adult who is interested in buying design interior products.  
+
+The 5 Epics listed below were documented within the Github project as Milestones. A Github Issue was created for each User Story which was then allocated to a label(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
+
+### MoSCoW Prioritization
+
+I've decomposed my Epics into stories prior to prioritizing and implementing them.
+Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
+- **Could Have**: has small impact if left out (*20% of stories*)
+- **Won't Have**: not a priority for this iteration
 
 ### User Stories
 
@@ -61,6 +73,12 @@ The following user stories were scoped out of the project due to time constraint
 - As a Site user I can add products to my saved items so that I can go back and view them at a later date.
 - As a Site user I can give products star ratings and comments so that other users can make a better assessment.
 
+## UX
+
+A visitor to Your Area would be someone who is most likely an adult who is interested in buying design interior products.  
+
+## Design 
+
 ### Colour Scheme
 
 The colour scheme of the site is mainly white and dark grey. The colours chosen are neutral in order to showcase the Home Décor Products with minimal distraction. 
@@ -71,13 +89,17 @@ I used [coolors.co](https://coolors.co/343a40-ffffff-f8f9fa-564592) to generate 
 
 ![screenshot](documentation/your-area-coolors.png)
 
+### Imagery
+
+There is 13 static images on the site where 8 of them is located in the inspiration gallery. Three static images is located in the footer for the companies representated there. The rest is the custom logo image and the main image in the home page. The static images were downloaded from the pexels image library.
+
 ### Typography  
 
 The Josefin Sans font is the main font used for the body of the website. This font was imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
 
 - [Josefin Sans](https://fonts.google.com/specimen/Montserrat) was used for the main content.
 
-- [Playfair Display](https://fonts.google.com/specimen/Lato) was used for the overlay of the main image in the home page.
+- [Playfair Display](https://fonts.google.com/specimen/Lato) was used for the overlay of the main image on the home page.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
@@ -379,16 +401,26 @@ Custom Error Pages were created to give the user more information on the error a
 - 404 Page Not Found - The page you're looking for isn't available.
 - 500 Server Error - Due to an internal error we are unable to process this request.
 
+## Database Schema 
+
+Two relational databases were used to create this site - during production SQLite was used and then Postgres was used for the deployed Heroku version. Below is an image of how the database models relate to each other:
+
+![Database Schema](docs/readme_images/database_schema.png)
+
+## Security Features and Defensive Design
+### User Authentication
+
+I applied Django's Class-based-views; Django's LoginRequiredMixin to make sure that any requests to access secure pages by non-authenticated users are redirected to the login page. Django's UserPassesTestMixin is used to limit access based on certain permissions i.e. to ensure only superusers can edit/delete products.
+
+### Form Validation
+If incorrect or empty data is added to a form, the form won't submit and a warning will appear to the user informing them what field raised the error.
+
+### Database Security
+The database url and secret key are stored in the env.py file to prevent unwanted connections to the database. Stripe keys and wh secret are also stored in the env.py file. 
+
+Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.
+
 ## Tools & Technologies Used
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
@@ -414,113 +446,6 @@ Feel free to delete any unused items below as necessary.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
 
-## Database Design
-
-Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
-Understanding the relationships between different tables can save time later in the project.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-```
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/erd.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Using Markdown formatting to represent an example ERD table using the Product model above:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Table: **Product**
-
-    | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
-    | | sku | CharField | |
-    | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
-
-## Agile Development Process
-
-### GitHub Projects
-
-[GitHub Projects](https://github.com/TheresLundqvist/Your-area/projects) served as an Agile tool for this project.
-It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
-
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/gh-projects.png)
-
-### GitHub Issues
-
-[GitHub Issues](https://github.com/TheresLundqvist/Your-area/issues) served as an another Agile tool.
-There, I used my own **User Story Template** to manage user stories.
-
-It also helped with milestone iterations on a weekly basis.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [Open Issues](https://github.com/TheresLundqvist/Your-area/issues)
-
-    ![screenshot](documentation/gh-issues-open.png)
-
-- [Closed Issues](https://github.com/TheresLundqvist/Your-area/issues?q=is%3Aissue+is%3Aclosed)
-
-    ![screenshot](documentation/gh-issues-closed.png)
-
-### MoSCoW Prioritization
-
-I've decomposed my Epics into stories prior to prioritizing and implementing them.
-Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
-
-- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
-- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
-- **Could Have**: has small impact if left out (*20% of stories*)
-- **Won't Have**: not a priority for this iteration
-
 ## Ecommerce Business Model
 
 This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
@@ -540,15 +465,13 @@ updates to business hours, notifications of events, and much more!
 
 ### Keywords
 
-I've identified some appropriate keywords to align with my site, that should help users
-when searching online to find my page easily from a search engine.
-This included a series of the following keyword types
+A mixture of short tail and long tail keywords were carefully considered for the site. Keyword research was performed by checking Google search results, looking at competitor's keywords and by utilising wordtracker.com. 
 
-- Short-tail (head terms) keywords
-- Long-tail keywords
+An initial list of topics and keywords generated can be seen below. This list was then refined based on relevance and authority.
 
-I also played around with [Word Tracker](https://www.wordtracker.com) a bit
-to check the frequency of some of my site's primary keywords (only until the free trial expired).
+The most relevant keywords have been added to the site's meta-keywords and meta-description. These keywords have also been carefully included in page titles, headings, site content, `<strong></strong>` tags, image alt attributes and anchor tag links across the site. 
+
+ ![Keywords](documentation/seo-keywords.png)
 
 ### Sitemap
 
@@ -569,68 +492,28 @@ Disallow:
 Sitemap: https://your-area.herokuapp.com/sitemap.xml
 ```
 
-Further links for future implementation:
-- [Google search console](https://search.google.com/search-console)
-- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
-- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
-- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
-
 ### Social Media Marketing
 
 Creating a strong social base (with participation) and linking that to the business site can help drive sales.
 Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
 
-I've created a mockup Facebook business account using the
-[Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
-provided by Code Institute.
-
-![screenshot](documentation/mockup-facebook.png)
+I've created a Facebook business account page
+![Facebook page](documentation/facebook-page-one.png)
+![Facebook page](documentation/facebook-page-two.png)
+![Facebook page](documentation/facebook-page-three.png)
 
 ### Newsletter Marketing
 
 I have incorporate a newsletter sign-up form on my application, to allow users to supply their
 email address if they are interested in learning more. 
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Option 1 (MailChimp):
-- Sign up for a Mailchimp account
-- This allows up to 2,500 subscription email sends per month
-- Incorporate the code and scripts into your project like in the CI lessons.
-
-Option 2 (Django):
-- Create a custom newsletter app in your project, with a custom model.
-- This method satisfies two assessment criteria:
-    - include a newsletter
-    - one of your custom models
-- It doesn't need anything except the "email" on the model.
-- Example:
-    ```python
-    class Newsletter(models.Model):
-    email = models.EmailField(null=False, blank=False)
-
-    def __str__(self):
-        return self.email
-    ```
-- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
-    - You can trigger an email sent out to subscribed users when new products are added to the site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![Newsletter page](documentation/newsletter.png)
 
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT:**
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 The live deployed application can be found deployed on [Heroku](https://your-area.herokuapp.com).
 
@@ -939,11 +822,7 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Credits
 

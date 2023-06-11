@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@1,900&display=swap');
+
+html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url('../images/interior-design-hero-img.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Josefin Sans';
+}
+
+#logo {
+    width: 30vw;
+    border: 2px solid black;
+}
+
+.banner-font {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* ------------------------------- Products page */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-container {
+    padding-top: 120px;
+}
+
+.product-header {
+    color: black;
+}
+
+a.category-badge>span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+/* ------------------------------- Shopping bag page */
+
+.bag-container {
+    position: relative;
+    top: 20%;
+}
+
+.summery {
+    font-size: .9rem;
+}
+
+
+/* ------------------------------- Index page - main image overlay text */
+
+.text-container {
+    position: relative;
+    top: 35%;
+}
+
+.overlay-bg {
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 90%;
+    height: auto;
+}
+
+.overlay-text {
+    font-size: 2.3em;
+    color: white;
+    font-style: italic;
+    font-family: Playfair Display, sans-serif;
+}
+
+
+/* ------------------------------- Buttons and Icons */
+
+.keep-shop,
+.secure-checkout,
+.fa-chevron-left,
+.fa-lock {
+    font-size: .6rem;
+}
+
+
+.qty_input {
+    padding: 0;
+}
+
+.btt-button {
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+/* ------------------------------- Gallery */
+
+#photos {
+    clear: both;
+    line-height: 0;
+    column-count: 1;
+    column-gap: 0;
+}
+
+#photos>img {
+    width: 100%;
+}
+
+
+/* ------------------------------- Colors */
+
+
+.bg-grey {
+    background: #555;
+}
+
+.text-grey {
+    color: #555;
+}
+
+/* ------------------------------- Bootstrap Toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+.bag-notification-wrapper {
+    height: 125px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*  ------------------------------- Product Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 0;
+}
+
+/* ------------------------------- Footer */
+
+footer {
+    position: relative;
+    top: 50vh;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+    color: white;
+}
+
+.divider {
+    border-left: 1px solid rgba(245, 246, 245, 0.2);
+    border-right: 1px solid rgba(245, 246, 245, 0.2);
+}
+
+.member-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.member-logo-postnord {
+    width: 180px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+.member-logo:hover,
+.member-logo-postnord:hover {
+    opacity: 80%;
+}
+
+.social-networks i {
+    font-size: 160%;
+    padding-right: 20px;
+}
+
+.social-networks i:hover {
+    opacity: 80%;
+}
+
+.footer-link {
+    color: white;
+}
+
+/* ------------------------------- About section */
+
+section {
+    position: relative;
+    top: 50vh;
+}
+
+
+/* ------------------------------- Allauth form formatting */
+
+/* Allauth form formatting */
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+/* ------------------------------- Media Queries */
+
+/* Small devices (Mobile devices, 450px and up) */
+@media only screen and (min-width: 450px) {
+    #photos {
+        column-count: 2;
+    }
+
+    .keep-shop,
+    .secure-checkout,
+    .fa-chevron-left,
+    .fa-lock {
+        font-size: 1rem;
+    }
+
+    .summery {
+        font-size: 1rem;
+    }
+
+    section {
+        top: 70vh;
+    }
+
+    footer {
+        top: 70vh;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .banner-font {
+        margin-left: 0 !important;
+    }
+
+    .text-container {
+        top: 70%;
+    }
+
+    .bag-container {
+        top: 50%;
+    }
+
+    .overlay-bg {
+        width: 70%;
+    }
+
+    .header-container {
+        padding-top: 220px;
+    }
+
+    .btt-button {
+        height: 32px;
+        width: 32px;
+        margin-right: 20px;
+    }
+
+    .bag-img {
+        width: 15% !important;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    #photos {
+        column-count: 3;
+    }
+
+    section {
+        top: 72vh;
+    }
+
+    footer {
+        top: 70vh;
+    }
+}
+
+/* Medium devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .overlay-bg {
+        width: 35%;
+    }
+
+    .header-container {
+        padding-top: 250px;
+    }
+
+    #photos {
+        column-count: 4;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .nav-link-text {
+        font-size: 0.9rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    .increment-qty,
+    .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+}
