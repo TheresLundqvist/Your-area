@@ -104,6 +104,15 @@ Flask/Django:
 - Non-Authenticated users should not be able to access pages that require authentication
 - Standard users should not be able to access pages intended for superusers
 
+You'll want to test all functionality on your application, whether it's a standard form,
+or uses CRUD functionality for data manipulation on a database.
+Make sure to include the `required` attribute on any form-fields that should be mandatory.
+Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
+
+You should include any manual tests performed, and the expected results/outcome.
+
+🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
