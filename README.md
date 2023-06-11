@@ -177,11 +177,10 @@ The Josefin Sans font is the main font used for the body of the website. This fo
 
 - The User icon navigation link is a drop down menu which includes the Sign up and Log in links. 
 - The options to Sign up or Log in will change to the option to log out once a user has logged in.
-- Once a user has signed in, the 'Product Management' option becomes available in the User dropdown.
+- Once a user has signed in, the 'My Profile' option becomes available in the User dropdown.
 
 ![Logged In](documentation/icons.png)
-- If the superuser has signed in, one more option 'Product Management' become available in the User dropdown.
-
+- If the superuser has signed in, one more option appears such as 'Product Management'.
 **Bag Icon**
 
 ![bag](documentation/bag.png)
@@ -235,46 +234,44 @@ The Josefin Sans font is the main font used for the body of the website. This fo
 - When a user signs up for an account they must verify their email address by clicking on the authentication link emailed  to the address they provided.
 - If a user forgets their password they can reset it by clicking the 'Forgot Password' on the log in page.
 
-
 ### Profile
 **Delivery Details**
 
-![Delivery Details](documentation/footer.png)
-- The delivery details section stores the user's delivery address and phone number.
+![Delivery Information](documentation/delivery-info.png)
+- The delivery information section stores the user's delivery address and phone number.
 - The information provided here is used to autofill the delivery address when placing an order.
 
 **Order History**
 
-![Order History](docs/readme_images/features/order_history.png)
+![Order History](documentation/order-history.png)
 - The order history section displays a list of every order the user has placed.
 - The table displays the order number, date it was ordered and the order total.
 - Clicking the order number will take the user to a summary page of that order.
 
 ### Products
 
-![all products](docs/readme_images/features/products_all.png)
-- When clicking the 'Home Decor' link in the navbar the dropdown menu will show all the different categories including 'Sofas', 'Tables', 'Chairs', 'Lighting' and 'Textiles'. 
+![all products](documentation/all-products.png)
+- When clicking the 'All products' link in the navbar the dropdown menu will show all the different filters which includes 'By Price', 'By Rating', 'By Category' and 'All Products'. 
 
-![Categories](docs/readme_images/features/categories.png)
-- The 'All' link will display a list of all products from the database.
+![Categories](documentation/shop-products.png)
+- The 'Shop Products' link will display a list of all products sorted after category.
 - Clicking any of the categories will filter the products to only show products from the category selected.
 - The category selected will display as the page heading.
 
-![products](docs/readme_images/features/products.png)
+![products](documentation/products-category.png)
 
-
-- Each product card shows an image of the product, its title, excerpt and price.
+- Each product card shows an image of the product, its title, rating, category badge and price.
 - If the user is a superuser, edit and delete buttons will appear at the bottom of the product card.
 - The products page is fully responsive, adjusting how many products are on each row depending on the user's screen size.
-- A sort box is located on the products page where users can sort all products by price in ascending or descending order and by title (A-Z).
+- A sort box is located on the products page where users can sort all products by price, name (A-Z), rating and category(A-Z) in ascending or descending order.
 
-![sort](docs/readme_images/features/sort.png)
+![sort](documentation/sort.png)
 
 ### Product Detail
 
-![Product Detail](docs/readme_images/features/product_detail.png)
-- When the user clicks on an individual product card they are taken to the full product details. The link is a bootstrap stretched link so clicking anywhere on the card will work.
-- The product detail page displays the product image, title, excerpt, price, product details and estimated dispatch time.
+![Product Detail](documentation/product-detail.png)
+- When the user clicks on an individual product card they are taken to the full product details.
+- The product detail page displays the product image, title, category badge, rating, price, product details and estimated dispatch time.
 - If the user is a superuser, edit and delete buttons will appear below these details.
 
 **Quantity Buttons**
@@ -288,35 +285,34 @@ The Josefin Sans font is the main font used for the body of the website. This fo
 ### Product Management
 **Add Product**
 
-![add product](docs/readme_images/features/add_product.png)
-- The add product page can be accessed by clicking the 'Add Product' button on the Home Decor page or in the user dropdown menu, under Home Decor Management. These options are only visible to superusers.
-- If a user tries to add a product (by changing the url) without being a superuser they are redirected to a custom 403 page.
-- The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
-- The SKU field must be unique. An error message will appear if the SKU already exists.
-- If a price is added with more than 6 digits the form will fail and an error message will appear under the price field.
+![add product](documentation/product-management.png)
+- The add product page can be accessed by clicking the 'Product Management' button in the user dropdown menu, under the user icon. These options are only visible to superusers.
+- If a user tries to add a product (by changing the url) without being a superuser they are redirected to the sign in page.
+- If the form is submitted without a required field blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
 - The user can upload a photo if they wish. If they choose not to, a default image displays as their product image.
 - Clicking the 'Add Product' button at the bottom of the form will create the product providing there are no errors on the form.
 -  The user will receive a success message notifying them that the product has been successfully added.
 
 **Edit Product**
 
-![edit product](docs/readme_images/features/edit_product.png)
+![edit product](documentation/product-management.png)
+![edit product](documentation/edit-product.png)
 - The superuser can choose to edit a Product by clicking the edit button on the product card or on the product detail page. 
 - The form opens with all fields populated with the original content.
 - The image field displays a thumbnail of the existing image and has a checkbox option to remove it. Checking this will change the image to the default image.
-- If a user tries to add a product (by changing the url) without being a superuser they are redirected to a custom 403 page.
+- If a user tries to add a product (by changing the url) without being a superuser they are redirected to the sign in page.
 - The superuser will receive a success message notifying them that the product has been successfully updated.
 
 **Delete Product**
 
-![delete product](docs/readme_images/features/delete_product.png)
+![delete product](documentation/edit-delete.png)
 - The superuser can choose to delete a Product by clicking the delete button on the product card or on the product detail page. 
 - The superuser is asked to confirm if they wish to delete the product or cancel.
 - The superuser will receive a success message notifying them that the product has been successfully deleted.
 
 ### Bag
 
-![shopping bag](docs/readme_images/features/shopping_bag.png)
+![shopping bag](documentation/shopping-bag.png)
 - When the user clicks on the shopping bag icon in the nav bar they are taken to the shopping bag page which shows the products which the user has added to their cart, unit price, quantity and subtotal.
 
 **Quantity Buttons**
@@ -324,23 +320,23 @@ The Josefin Sans font is the main font used for the body of the website. This fo
 - The plus and minus buttons increase and decrease the input value.
 - If the value is set to 1 the minus quantity will be disabled. Respectively if the value is set to 99 the plus button is disabled.
 
-**Update and Delete Buttons**
+**Update and Remove Buttons**
 
-![Update Delete buttons](docs/readme_images/features/update_delete_buttons.png)
-- Clicking the 'update' icon button saves any changes to the quantity and updates the item's subtotal.
-- Clicking the 'Bin' icon button removes the item completely from the user's bag.
+![Update Remove buttons](documentation/update-remove.png)
+- Clicking the 'update' link saves any changes to the quantity and updates the item's subtotal.
+- Clicking the 'Remove' link removes the item completely from the user's bag.
 - If the user manually types in a negative number and clicks 'update', the item will be removed from the item from the bag.
 - If the user manually types in a number >99 and clicks 'update' an error message will display informing the user of the correct parameters.
 
 **Total Section**
 - At the end of the line items is a summary of the costs.
 - The summary features the bags total, delivery cost and the grand total to pay.
-- Underneath the grand total users will find a message informing them of how much more they need to spend to receive free delivery if they haven't already met the free delivery threshold (€250). 
-- Beneath the grand total is two buttons. From here the user can either continue to the checkout or return to the products page by clicking 'Continue Shopping'.
+- Underneath the grand total users will find a message informing them of how much more they need to spend to receive free delivery if they haven't already met the free delivery threshold (SEK 500). 
+- Beneath the grand total is two buttons. From here the user can either continue to the checkout or return to the products page by clicking 'Keep Shopping'.
 
 ### Checkout 
 
-![checkout](docs/readme_images/features/checkout.png)
+![checkout](documentation/checkout.png)
 
 **Details**
 - Within the details section the user can fill out their contact details, delivery address, and card number.
@@ -357,36 +353,30 @@ The Josefin Sans font is the main font used for the body of the website. This fo
 **Payment**
 - The card payment is handled by Stripe to ensure secure payment.
 - Incorrect card numbers will automatically show an invalid card number error.
-- A loading screen will appear when a payment is being processed to stop the user clicking away.
 - There is a warning message at the bottom of the page informing the user of how much their card is about to be charged.
 - If the payment form doesn't submit properly or the user closes the browser during the wait animation, the order will still be created in the database through the webhook. 
 - Once the payment is processed, the webhook will search the database to confirm the order exists. If it cannot find it, it will create one using the payment information.
 
 **Confirmation**
 
-![order_confirmation](docs/readme_images/features/order_confirmation.png)
+![order_confirmation](documentation/order-confirm-page.png)
 - Once the order has been processed the user is taken to the checkout success page.
 This page summarises the completed order.
 - An email will be sent to the user with their order confirmation
-- At the end of the summary is a 'Keep Shopping' button that takes the user back to the Home Decor page.
-
+- At the end of the summary is a 'Now checkout the latest deals' button that takes the user back to the all specials page with deals, clearence and new arrivals.
 ### Contact Form
 
-![Enquiry Form](docs/readme_images/features/enquiry_form.png)
-- A user can open up the contact form by clicking on the "Enquire Now" button on the Interior Design Services page or by clicking the 'Contact' button in the Nav bar.
-- If the user is logged in, the email field is prepopulated with the user's email address. 
-- The form contains a drop down menu where the user can select the type of enquiry from a list so that the site owner knows what the enquiry is about.
-- The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
-- When the form is submitted, the user receives an email confirmation of their enquiry so that they have a record of it.
+![Contact Page](documentation/contact.png)
+- Customers can contact Your Area be filling in a contact form with name, number, email and message fields. 
 
 ### Error Pages
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
-![403 error](docs/readme_images/features/403_error.png)
+![404 error](documentation/404.png)
 
-- 400 Bad Request - Fresh Nest is unable to handle this request.
+- 400 Bad Request - Your Area is unable to handle this request.
 - 403 Page Forbidden - Looks like you're trying to access forbidden content. Please log out and sign in to the correct account.
-- 404 Page Not Found - The page you're looking for doesn't exist.
+- 404 Page Not Found - The page you're looking for isn't available.
 - 500 Server Error - Due to an internal error we are unable to process this request.
 
 ## Tools & Technologies Used
