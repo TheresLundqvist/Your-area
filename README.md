@@ -405,7 +405,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 Two relational databases were used to create this site - during production SQLite was used and then Postgres was used for the deployed Heroku version. Below is an image of how the database models relate to each other:
 
-![Database Schema](docs/readme_images/database_schema.png)
+![Database Schema](documentation/erd.png)
 
 ## Security Features and Defensive Design
 ### User Authentication
