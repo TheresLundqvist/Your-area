@@ -28,7 +28,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyour-area.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors or warnings for custom CSS |
+| style.css, profile.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyour-area.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors or warnings for custom CSS |
 
 ### JavaScript
 
@@ -36,7 +36,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| stripe_elements.js | ![screenshot](documentation/jshint-stripe-elements.png) | Pass: No Errors |
+| stripe_elements.js | ![screenshot](documentation/jshint-stripe-elements.png) | Pass: No Errors, igonore Stripe variable warning |
 | countryfield.js | ![screenshot](documentation/jhint-countryfield.png) | Pass: No Errors |
 
 ### Python Validation - Pycodestyle
@@ -165,10 +165,9 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on sign in link | Redirects to login page | Pass | |
 | Product Management page | | | | |
 | | Try to submit form marked with * blank | Throws error message | Pass | |
-| | Try to submit form with excessive price | Throws error message | Fail | |
+| | Try to submit form with excessive price | Throws error message | Fail | Add a max value of 99999 to product model price|
 | Profile page | | | | |
 | | Try to submit form with all fields blank | Updates form to blank | Pass | |
-| | Try to submit form with letters on phone number field | Throws error message | Fail | |
 | | Click on update information button | Updates information and shows success message | Pass | |
 
 ## User Story Testing
