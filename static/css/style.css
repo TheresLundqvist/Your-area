@@ -273,8 +273,8 @@ section {
 
 /* ------------------------------- Media Queries */
 
-/* Small devices (Mobile devices up to max 350px and up) */
-@media only screen and (max-width: 350px) {
+/* Small devices (Mobile devices up to max 390px and up) */
+@media only screen and (max-width: 390px) {
     .toast-checkout {
         font-size: .9rem;
     }
