@@ -148,7 +148,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Try to submit form with invalid email format | Throws error message | Pass | |
 | | Try to submit form with various blank fields | Throws error message | Pass | |
 | | Try to access checkout page with empty bag | Throws error and redirects to products page | Pass | |
-| | Press on 'Complete order' | Send order confirmation email | Fail | No errors, but email confirmation does not work |
+| | Press on 'Complete order' | Send order confirmation email | Pass | |
 | Invalid URL | | | | |
 | | Try to access invalid URL page | Redirects to 404 page | Pass | |
 | Sign in page | | | | |
@@ -167,7 +167,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on sign up after filling in form | Send verification email | Pass | |
 | Product Management page | | | | |
 | | Try to submit form marked with * blank | Throws error message | Pass | |
-| | Try to submit form with excessive price | Throws error message | Fail | Add a max value of 99999 to product model price|
+| | Try to submit form with excessive price | Throws error message | Fail | Pass: Add a max value of 99999 to product model price|
 | Profile page | | | | |
 | | Try to submit form with all fields blank | Updates form to blank | Pass | |
 | | Click on update information button | Updates information and shows success message | Pass | |
@@ -210,11 +210,4 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## Unfixed Bugs
 
-Order confirmation email does not work. No issues with the gmail set up since Email verifications work. But I have no errors in the console, no errors with Stripe.. So this remains a mistery. Tried to move the send email function and import over to views.py instead of the webhook_handler.py, but still does not work.  
-
-![screenshot](documentation/email-verification.png)
-![screenshot](documentation/webhook.png)
-![screenshot](documentation/stripe-no-errors.png)
-![screenshot](documentation/stripe-no-errors-local.png)
-![screenshot](documentation/stripe-no-errors-deployed.png)
-
+There are no remaining bugs that I am aware of.
