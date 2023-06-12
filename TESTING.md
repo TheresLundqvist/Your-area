@@ -43,13 +43,13 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 Python testing was done using Pycodestyle to ensure there were no syntax errors.
 
-The only errors displayed (as per below screenshot) can be ignored. The majority are within automatically generated files with the exception of env.py and webhooks.py.
-
-I have ignored the the formatting errors related to migration files with lines to long. 
+The only errors displayed (as per below screenshot) is due to auto generated migration files with lines to long. These files can be ignored.
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
 | All *py files | ![screenshot](documentation/pep8-validation.png) | Pass: No errors (except auto-generated migrations) |
+
+I have also used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
 | App | File | CI PEP8 URL |
 | --- | --- | --- |
@@ -129,7 +129,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Mobile (DevTools) | ![screenshot](documentation/mobile-responsive-devtools.png) | Works as expected |
 | Tablet (DevTools) | ![screenshot](documentation/ipad-mini-responsive-devtools.png) | Works as expected |
 | Desktop | ![screenshot](documentation/desktop-responsive.png) | Works as expected |
-| Huawei P30 (Manual test) | ![screenshot](documentation/mobile-responsive.jpg) | Scrolls a bit to the sides. Fixed: Added some margin-right to bag icon. |
+| Huawei P30 (Manual test) | ![screenshot](documentation/mobile-responsive.png.jpg) | Added some margin-right to bag icon due to some x-overflow. |
 
 ## Lighthouse Audit
 
