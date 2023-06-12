@@ -421,6 +421,54 @@ Two relational databases were used to create this site - during production SQLit
 
 ![Database Schema](documentation/erd.png)
 
+### Custom Models
+
+I have 3 custom models, which are:
+
+**Contact** [models.py](contact/models.py)
+
+To handle users submitting the contact form.
+
+```python
+class Contact(models.Model):
+    name = models.CharField(max_length=100, null=False, blank=False)
+    email = models.EmailField(null=False, blank=False)
+    phone = models.CharField(max_length=30)
+    message = models.TextField(null=False, blank=False)
+
+    def __str__(self):
+        return self.name
+```
+
+**Newsletter** [models.py](newsletter/models.py)
+
+To handle users signing up to the Newsletter.
+
+```python
+class Newsletter(models.Model):
+    email = models.EmailField(null=False, blank=False)
+
+    def __str__(self):
+        return self.email
+```
+
+**FAQs** [models.py](faqs/models.py)
+
+To handle the FAQs section of the site.
+
+```python
+class FAQ(models.Model):
+    """FAQs model"""
+    question = models.CharField(max_length=250, null=False, blank=False)
+    answer = models.TextField(null=False, blank=False)
+
+    class Meta:
+        verbose_name_plural = "FAQs"
+
+    def __str__(self):
+        return self.question
+```
+
 ## Security Features and Defensive Design
 ### User Authentication
 
