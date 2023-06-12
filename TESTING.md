@@ -71,7 +71,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Mobile (DevTools) | ![screenshot](documentation/mobile-responsive-devtools.png) | Works as expected |
 | Tablet (DevTools) | ![screenshot](documentation/ipad-mini-responsive-devtools.png) | Works as expected |
 | Desktop | ![screenshot](documentation/desktop-responsive.png) | Works as expected |
-| Huawei P30 (Manual test) | ![screenshot](documentation/huawei-p30-responsive.jpg) | Scrolls a bit to the sides |
+| Huawei P30 (Manual test) | ![screenshot](documentation/mobile-responsive.jpg) | Scrolls a bit to the sides. Fixed: Added some margin-right to bag icon. |
 
 ## Lighthouse Audit
 
