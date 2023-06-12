@@ -3,6 +3,8 @@ from django.shortcuts import (
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -10,7 +12,6 @@ from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
-from django.core.mail import send_mail
 
 import stripe
 import json
@@ -162,6 +163,8 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
+    send_confirmation_email(order)
+
     if 'bag' in request.session:
         del request.session['bag']
 
@@ -173,7 +176,7 @@ def checkout_success(request, order_number):
     return render(request, template, context)
 
 
-def _send_confirmation_email(self, order):
+def send_confirmation_email(order):
     """Send the user a confirmation email"""
     cust_email = order.email
     subject = render_to_string(
