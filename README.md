@@ -554,7 +554,10 @@ Inside, I've included the default settings:
 
 ```
 User-agent: *
-Disallow:
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /checkout/
+Disallow: /profile/
 Sitemap: https://your-area.herokuapp.com/sitemap.xml
 ```
 
