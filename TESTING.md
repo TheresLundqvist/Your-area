@@ -47,10 +47,68 @@ The only errors displayed (as per below screenshot) can be ignored. The majority
 
 I have ignored the the formatting errors related to migration files with lines to long. 
 
-| File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| All *py files | PEP8 | ![screenshot](documentation/pep8-validation.png) | Pass: No errors |  
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| All *py files | ![screenshot](documentation/pep8-validation.png) | Pass: No errors (except auto-generated migrations) |
 
+| App | File | CI PEP8 URL |
+| --- | --- | --- |
+| about | | |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/about/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/about/views.py) |
+| bag | | |
+| | contexts | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/bag/contexts.py) |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/bag/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/bag/views.py) |
+| checkout | | |
+| | admin | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/checkout/admin.py) |
+| | forms | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/checkout/forms.py) |
+| | models | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/checkout/models.py) |
+| | signals | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/checkout/signals.py) |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/checkout/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/checkout/views.py) |
+| | webhook_handler | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/checkout/webhook_handler.py) |
+| | webhooks | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/checkout/webhooks.py) |
+| contact | | |
+| | admin | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/contact/admin.py) |
+| | forms | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/contact/forms.py) |
+| | models | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/contact/models.py) |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/contact/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/contact/views.py) |
+| faqs | | |
+| | admin | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/faqs/admin.py) |
+| | models | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/faqs/models.py) |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/faqs/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/faqs/views.py) |
+| gallery | | |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/gallery/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/gallery/views.py) |
+| home | | |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/home/urls.py) |
+| newsletter | | |
+| | admin | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/newsletter/admin.py) |
+| | forms | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/newsletter/forms.py) |
+| | models | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/newsletter/models.py) |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/newsletter/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/newsletter/views.py) |
+| products | | |
+| | admin | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/products/admin.py) |
+| | forms | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/products/forms.py) |
+| | models | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/products/models.py) |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/products/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/products/views.py) |
+| | widgets | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/products/widgets.py) |
+| profiles | | |
+| | forms | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/profiles/forms.py) |
+| | models | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/profiles/models.py) |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/profiles/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/profiles/views.py) |
+| your_area_store | | |
+| | settings | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/your_area_store/settings.py) |
+| | urls | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/your_area_store/urls.py) |
+| | views | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/your_area_store/views.py) |
+| root-level | | |
+| | manage.py | [URL](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/TheresLundqvist/Your-area/main/manage.py) |
 
 ## Browser Compatibility
 
