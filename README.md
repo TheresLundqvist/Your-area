@@ -899,7 +899,7 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-Nothing noticed.
+When working locally during development stages, any emails sent (user registration confirmation, checkout purchase confirmation), no actual emails are sent; instead, the emails appear in the IDE terminal.
 
 ## Credits
 
