@@ -283,6 +283,10 @@ section {
         width: 85vw;
     }
 
+    .delivery-text {
+        font-size: .8rem;
+    }
+
 }
 
 /* ------------------------------- Media Queries */
