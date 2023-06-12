@@ -109,70 +109,84 @@ The Josefin Sans font is the main font used for the body of the website. This fo
 
  <summary>Home Page</summary>
 
-![Home Page](#)
+![Home Page](documentation/wireframes/home-wireframe.png)
 </details>
 
 <details>
 
  <summary>Products Page</summary>
 
-![Products Page](#)
+![Products Page](documentation/wireframes/products-wireframe.png)
 </details>
 
 <details>
 
  <summary>Contact Page</summary>
 
-![Contact Page](#)
+![Contact Page](documentation/wireframes/contact-wireframe.png)
 </details>
 
 <details>
 
  <summary>About Page</summary>
 
-![About Page](#)
+![About Page](documentation/wireframes/about-wireframe.png)
 </details>
 
 <details>
 
  <summary>Gallery Page</summary>
 
-![Gallery Page](#)
+![Gallery Page](documentation/wireframes/gallery-wireframe.png)
 </details>
 
 <details>
 
  <summary>Bag Page</summary>
 
-![Bag](#)
+![Bag](documentation/wireframes/bag-wireframe.png)
 </details>
 
 <details>
 
  <summary>Checkout Page</summary>
 
-![Checkout Page](#)
+![Checkout Page](documentation/wireframes/checkout-wireframe.png)
 </details>
 
 <details>
 
  <summary>Order Confirmation</summary>
 
-![Order Confirmation](#)
+![Order Confirmation](documentation/wireframes/order-confirm-wireframe.png)
 </details>
 
 <details>
 
  <summary>Profile</summary>
 
-![Profile](#)
+![Profile](documentation/wireframes/profile-wireframe.png)
 </details>
 
 <details>
 
  <summary>Product Management</summary>
 
-![Product Management](#)
+![Product Management](documentation/wireframes/product-management-wireframe.png)
+</details>
+
+<details>
+
+ <summary>FAQ</summary>
+
+![Faqs](documentation/wireframes/faqs-wireframe.png)
+</details>
+
+<details>
+
+ <summary>Newsletter</summary>
+
+![Newsletter](documentation/wireframes/newsletter-wireframe.png)
 </details>
 
 ## Features
