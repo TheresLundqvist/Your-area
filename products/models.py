@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MaxValueValidator
 
 
 class Category(models.Model):
@@ -25,7 +26,7 @@ class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)  # noqa
     description = models.TextField()
     estimated_dispatch = models.CharField(max_length=254, null=True, blank=True)  # noqa
-    price = models.IntegerField(null=False, blank=False)
+    price = models.IntegerField(validators=[MaxValueValidator(99999)], null=False, blank=False)  # noqa
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)  # noqa
     image = models.ImageField(null=True, blank=True)
 

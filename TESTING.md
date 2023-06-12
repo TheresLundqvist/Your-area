@@ -96,7 +96,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Bag | Mobile | ![screenshot](documentation/bag-mobile-lighthouse.png) | Slow Performance |
 | Bag | Desktop | ![screenshot](documentation/bag-desktop-lighthouse.png) |  |
 | Checkout | Mobile | ![screenshot](documentation/checkout-mobile-lighthouse.png) | Slow Performance |
-| Checkout | Desktop | ![screenshot](documentation/checkout-desktop-lighthouse.png) | |
+| Checkout | Desktop | ![screenshot](documentation/checkout-desktop-lighthouse.png) | Slow Performance |
 
 
 ## Defensive Programming
@@ -165,7 +165,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on sign in link | Redirects to login page | Pass | |
 | Product Management page | | | | |
 | | Try to submit form marked with * blank | Throws error message | Pass | |
-| | Try to submit form with excessive amount | Throws error message | Fail | |
+| | Try to submit form with excessive price | Throws error message | Fail | |
 | Profile page | | | | |
 | | Try to submit form with all fields blank | Updates form to blank | Pass | |
 | | Try to submit form with letters on phone number field | Throws error message | Fail | |
