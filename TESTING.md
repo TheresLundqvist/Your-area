@@ -206,7 +206,50 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | Bug | Status | Comment |
 | --- | --- | --- |
-| Footer and about section stacked on top of main image in deployed version | Closed | Deployed again and issue resolved |
+| Footer and about section stacked on top of main image in deployed version | Resolved | Deployed again and issue resolved |
+| Overflow-X | Resolved | Forgot `container-fluid` Bootstrap class on a section |
+
+## Close Issues/User Stories
+
+All previously closed Issues/User Stories issues can be found [here](https://github.com/TheresLundqvist/Your-area/issues?q=is%3Aissue+is%3Aclosed).
+
+| Issue | Label |
+| --- | --- |
+| [USER STORY: Log in and out](https://github.com/TheresLundqvist/Your-area/issues/1) | Must Have |
+| [USER STORY: Register account](https://github.com/TheresLundqvist/Your-area/issues/4) | Must Have |
+| [USER STORY: Site navigation](https://github.com/TheresLundqvist/Your-area/issues/5) | Must Have |
+| [USER STORY: Product list view](https://github.com/TheresLundqvist/Your-area/issues/6) | Must Have |
+| [USER STORY: Product details](https://github.com/TheresLundqvist/Your-area/issues/7) | Must Have |
+| [USER STORY: Product category](https://github.com/TheresLundqvist/Your-area/issues/8) | Should Have |
+| [USER STORY: Search products](https://github.com/TheresLundqvist/Your-area/issues/9) | Could Have |
+| [USER STORY: Sort products](https://github.com/TheresLundqvist/Your-area/issues/10) | Should Have |
+| [USER STORY: Login status](https://github.com/TheresLundqvist/Your-area/issues/12) | Should Have |
+| [USER STORY: Order history](https://github.com/TheresLundqvist/Your-area/issues/13) | Should Have |
+| [USER STORY: Prefilled personal details](https://github.com/TheresLundqvist/Your-area/issues/14) | Could Have |
+| [USER STORY: View order history](https://github.com/TheresLundqvist/Your-area/issues/15) | Could Have |
+| [USER STORY: Save personal details in user profile](https://github.com/TheresLundqvist/Your-area/issues/16) | Could Have |
+| [USER STORY: Password reset](https://github.com/TheresLundqvist/Your-area/issues/17) | Must Have |
+| [USER STORY: Add products to shopping cart](https://github.com/TheresLundqvist/Your-area/issues/18) | Must Have |
+| [USER STORY: Shopping cart running total](https://github.com/TheresLundqvist/Your-area/issues/19) | Should Have |
+| [USER STORY: Cart summery](https://github.com/TheresLundqvist/Your-area/issues/20) | Must Have |
+| [USER STORY: Adjust product quantity](https://github.com/TheresLundqvist/Your-area/issues/21) | Should Have |
+| [USER STORY: Payment details](https://github.com/TheresLundqvist/Your-area/issues/22) | Must Have |
+| [USER STORY: View shopping cart](https://github.com/TheresLundqvist/Your-area/issues/23) | Must Have |
+| [USER STORY: Guest checkout](https://github.com/TheresLundqvist/Your-area/issues/24) | Must Have |
+| [USER STORY: Order confirmation](https://github.com/TheresLundqvist/Your-area/issues/25) | Must Have |
+| [USER STORY: Product management](https://github.com/TheresLundqvist/Your-area/issues/26) | Must Have |
+| [USER STORY: Newsletter signup](https://github.com/TheresLundqvist/Your-area/issues/28) | Could Have |
+| [USER STORY: Site declaration](https://github.com/TheresLundqvist/Your-area/issues/31) | Should Have |
+
+## Open Issues/User Stories
+
+Any remaining open Issues/User Stories issues can be tracked [here](https://github.com/TheresLundqvist/Your-area/issues).
+
+| Issue | Label |
+| --- | --- |
+| [USER STORY: Product review](https://github.com/TheresLundqvist/Your-area/issues/30) | Could Have |
+| [USER STORY: Approve user comments](https://github.com/TheresLundqvist/Your-area/issues/29) | Could Have |
+| [USER STORY: Save product for later](https://github.com/TheresLundqvist/Your-area/issues/27) | Won't Have |
 
 ## Unfixed Bugs
 
